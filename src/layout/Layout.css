@@ -1,0 +1,160 @@
+/* ----------------------------------------------------------------------------------------- Mobile */
+/* ----------------------------------------------------------------------------------------- */
+
+:root {
+
+  /* ------------------------------------------------ Main Space */
+  --bgcolor: black;
+  --bgGradient: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(40,48,113,1) 100%);
+  --mainFontColor: white;
+  
+  /* ------------------------------------------------ Blocks */
+  --blockBorderColor: white;
+  --innerBlockBgColor: white;
+  --innerBlockFontColor: black;
+  --innerBlockBorderColor: white;
+  
+  /* ------------------------------------------------ Nav */
+  --navBgColor: white;
+  --navFontColor: black;
+  --navBorderColor: black;
+  --navButtonBg: white;
+  --navButtonBorderColor: rgb(240, 240, 240);
+  --navButtonActiveBg: white;
+  --navButtonActiveBorderColor: black;
+  --navActiveFontColor: black;
+}
+
+html, body {
+  background-color: var(--bgcolor);
+  background: var(--bgGradient);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  color: var(--mainFontColor);
+}
+
+/* ----------------------------------------------------------------------------------------- Navbar */
+
+.navbar-body {
+  color: var(--navFontColor);
+  background-color: var(--navBgColor);
+  border-bottom: 1.5px solid var(--navBorderColor);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
+  height: 6%;
+  width: 100%;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 75%;
+}
+
+ul.navbar-buttons {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-buttons li {
+  display: inline-block;
+  margin: 0;
+  margin: 0 2%;
+  font-size: 100%;
+}
+
+a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visited {
+  text-decoration: none;
+  border: 2px solid var(--navButtonBorderColor);
+  background-color: var(--navButtonBg);
+  color: black;
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: 500ms;
+}
+
+a.navbutton:hover {
+  border: 2px solid var(--navButtonActiveBorderColor);
+  background-color: var(--navButtonActiveBg);
+  color: var(--navActiveFontColor);
+  transition: 300ms;
+}
+
+/* ----------------------------------------------------------------------------------------- Big block */
+
+.bigolblock {
+  border-bottom: 2px solid var(--blockBorderColor);
+  background-color: var(--bgcolor);
+  color: black;
+  margin: 0 0 5vh 0;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.bigolblock2 {
+  background-image: url('https://wallpapercave.com/uwp/uwp1846254.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-top: 2px solid var(--blockBorderColor);
+  border-bottom: 2px solid var(--blockBorderColor);
+  background-color: var(--bgcolor);
+  margin: 5vh 0 5vh 0;
+  height: 500px;
+}
+
+.base-container {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.insidetheblock {
+  background-color: var(--innerBlockBgColor);
+  color: var(--innerBlockFontColor);
+  width: 45vh;
+  height: 35vh;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid var(--innerBlockBorderColor);
+  padding: 10px;
+  margin: 5vh;
+}
+
+/* ----------------------------------------------------------------------------------------- Desktop */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 500px){
+  .navbar-body {
+    top: 0%;
+  }
+
+/* ----------------------------------------------------------------------------------------- Nav */
+
+  .navbar-buttons li {
+    font-size: 120%;
+  }
+
+  a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visited {
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+/* ----------------------------------------------------------------------------------------- Big block */
+
+  .bigolblock {
+    border-top: 2px solid var(--blockBorderColor);
+  }
+}
