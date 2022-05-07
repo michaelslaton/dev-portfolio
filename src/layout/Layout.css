@@ -23,6 +23,10 @@
   --navButtonActiveBg: white;
   --navButtonActiveBorderColor: black;
   --navActiveFontColor: black;
+  
+  /* ------------------------------------------------ Backgrounds */
+  --miles: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
+
 }
 
 html, body {
@@ -31,6 +35,43 @@ html, body {
   background-attachment: fixed;
   scroll-behavior: smooth;
   color: var(--mainFontColor);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------------------------------------------------- Skills */
+
+.skillCard {
+  width: 100px;
+  text-align: center;
+  font-style: bold;
+  font-size: 10px;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 3px;
+  width: 10%;
+  margin: 0 0;
+}
+
+.skillImage {
+  width: 40px;
+}
+
+.skillsContainer {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1px;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
@@ -88,37 +129,36 @@ a.navbutton:hover {
 
 .bigolblock {
   border-bottom: 2px solid var(--blockBorderColor);
+  background-image: var(--miles);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   background-color: var(--bgcolor);
-  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   margin: 0 0 5vh 0;
   height: 100vh;
+}
+
+.bigolblock2 {
+  border-top: 2px solid var(--blockBorderColor);
+  border-bottom: 2px solid var(--blockBorderColor);
+  background-color: var(--bgcolor);
+  margin: 5vh 0 5vh 0;
+}
+
+.base-container {
+  border-bottom: 2px solid var(--blockBorderColor);
   background-image: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-.bigolblock2 {
-  background-image: url('https://wallpapercave.com/uwp/uwp1846254.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  border-top: 2px solid var(--blockBorderColor);
-  border-bottom: 2px solid var(--blockBorderColor);
   background-color: var(--bgcolor);
-  margin: 5vh 0 5vh 0;
-  height: 500px;
-}
-
-.base-container {
-  border: 1px solid red;
+  margin: 0 0 5vh 0;
+  height: 100vh;
   width: 100%;
 }
 
@@ -151,10 +191,45 @@ a.navbutton:hover {
     padding: 10px 20px;
     border-radius: 8px;
   }
+
+  /* ----------------------------------------------------------------------------------------- Skills */
   
+  .skillCard {
+    width: 175px;
+    text-align: center;
+    font-style: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .skills {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    width: 60%;
+    margin: 2% 5%;
+  }
+  
+  .skillImage {
+    width: 60px;
+  }
+
+  .skillsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
 /* ----------------------------------------------------------------------------------------- Big block */
 
   .bigolblock {
     border-top: 2px solid var(--blockBorderColor);
+  }
+
+  .bigolblock2 {
+    border-top: 2px solid var(--blockBorderColor);
+    border-bottom: 2px solid var(--blockBorderColor);
+    background-color: var(--bgcolor);
+    margin: 5vh 0 5vh 0;
+    height: 100vh;
   }
 }

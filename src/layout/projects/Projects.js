@@ -4,7 +4,7 @@ export default function Projects(){
 
 
   return (
-    <div>
+    <div className="bigolblock2">
       
     </div>
   )
