@@ -9,7 +9,7 @@
   --mainFontColor: white;
   
   /* ------------------------------------------------ Blocks */
-  --blockBorderColor: white;
+  
   --innerBlockBgColor: white;
   --innerBlockFontColor: black;
   --innerBlockBorderColor: white;
@@ -17,9 +17,9 @@
   /* ------------------------------------------------ Nav */
   --navBgColor: white;
   --navFontColor: black;
-  --navBorderColor: black;
+  --navBorderColor: white;
   --navButtonBg: white;
-  --navButtonBorderColor: rgb(240, 240, 240);
+  --navButtonBorderColor: rgb(255, 255, 255);
   --navButtonActiveBg: white;
   --navButtonActiveBorderColor: black;
   --navActiveFontColor: black;
@@ -49,16 +49,20 @@ html, body {
   width: 100px;
   text-align: center;
   font-style: bold;
-  font-size: 10px;
+  font-size: 15px;
   margin-bottom: 40px;
 }
 
 .skills {
+  border: 1px solid hsl(280, 100%, 27%);
+  background: linear-gradient(120deg, rgba(0,1,23,1) 0%, hsl(277, 100%, 7%) 70%);
+  border-radius: 20px;
+  padding: 25px 0 0 25px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 33%);
   grid-auto-rows: auto;
-  grid-gap: 3px;
-  width: 10%;
+  grid-gap: 0;
+  width: 100%;
   margin: 0 0;
 }
 
@@ -79,13 +83,13 @@ html, body {
 .navbar-body {
   color: var(--navFontColor);
   background-color: var(--navBgColor);
-  border-bottom: 1.5px solid var(--navBorderColor);
   position: fixed;
   display: flex;
   justify-content: center;
   bottom: 0%;
   height: 6%;
   width: 100%;
+  z-index: 9999;
 }
 
 .navbar-buttons {
@@ -94,6 +98,7 @@ html, body {
   align-items: center;
   list-style: none;
   width: 75%;
+  text-transform: uppercase;
 }
 
 ul.navbar-buttons {
@@ -128,54 +133,33 @@ a.navbutton:hover {
 /* ----------------------------------------------------------------------------------------- Big block */
 
 .bigolblock {
-  border-bottom: 2px solid var(--blockBorderColor);
   background-image: var(--miles);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-color: var(--bgcolor);
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 0 0 5vh 0;
   height: 100vh;
 }
 
 .bigolblock2 {
-  border-top: 2px solid var(--blockBorderColor);
-  border-bottom: 2px solid var(--blockBorderColor);
   background-color: var(--bgcolor);
-  margin: 5vh 0 5vh 0;
 }
 
-.base-container {
-  border-bottom: 2px solid var(--blockBorderColor);
-  background-image: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-color: var(--bgcolor);
-  margin: 0 0 5vh 0;
-  height: 100vh;
-  width: 100%;
-}
 
 .insidetheblock {
   background-color: var(--innerBlockBgColor);
   color: var(--innerBlockFontColor);
-  width: 45vh;
-  height: 35vh;
-  justify-content: center;
-  border-radius: 25px;
   border: 2px solid var(--innerBlockBorderColor);
-  padding: 10px;
-  margin: 5vh;
+  border-radius: 25px;
+  width: 95%;
+  padding: 0 10px;
+  position: relative;
+  top: 50%;
 }
 
 /* ----------------------------------------------------------------------------------------- Desktop */
-/* ----------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------  */
 @media (min-width: 500px){
   .navbar-body {
     top: 0%;
@@ -192,7 +176,7 @@ a.navbutton:hover {
     border-radius: 8px;
   }
 
-  /* ----------------------------------------------------------------------------------------- Skills */
+/* ----------------------------------------------------------------------------------------- Skills */
   
   .skillCard {
     width: 175px;
@@ -221,15 +205,16 @@ a.navbutton:hover {
   }
 /* ----------------------------------------------------------------------------------------- Big block */
 
-  .bigolblock {
-    border-top: 2px solid var(--blockBorderColor);
-  }
-
   .bigolblock2 {
-    border-top: 2px solid var(--blockBorderColor);
-    border-bottom: 2px solid var(--blockBorderColor);
     background-color: var(--bgcolor);
-    margin: 5vh 0 5vh 0;
     height: 100vh;
   }
+
+  .insidetheblock {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 30%;
+  }
+
 }
