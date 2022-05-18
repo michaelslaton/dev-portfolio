@@ -1,33 +1,35 @@
-/* ----------------------------------------------------------------------------------------- Mobile */
 /* ----------------------------------------------------------------------------------------- */
 
 :root {
 
   /* ------------------------------------------------ Main Space */
-  --bgcolor: black;
-  --bgGradient: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(40,48,113,1) 100%);
   --mainFontColor: white;
   
   /* ------------------------------------------------ Blocks */
   
-  --innerBlockBgColor: white;
-  --innerBlockFontColor: black;
-  --innerBlockBorderColor: white;
+  --innerBlockBgColor: rgb(31, 38, 57);
+  --innerBlockFontColor: rgb(159, 174, 215);
+  --innerBlockBorderColor: rgb(31, 38, 57);
   
   /* ------------------------------------------------ Nav */
-  --navBgColor: white;
-  --navFontColor: black;
+  
+  --navBgColor: rgb(31, 38, 57);
+  --navFontColor: rgb(159, 174, 215);
   --navBorderColor: white;
-  --navButtonBg: white;
-  --navButtonBorderColor: rgb(255, 255, 255);
-  --navButtonActiveBg: white;
-  --navButtonActiveBorderColor: black;
-  --navActiveFontColor: black;
+  --navButtonBg: rgb(31, 38, 57);
+  --navButtonBorderColor: rgb(31, 38, 57);
+  --navButtonActiveBg: rgb(27, 33, 49);
+  --navButtonActiveBorderColor: white;
+  --navActiveFontColor: white;
   
   /* ------------------------------------------------ Backgrounds */
-  --miles: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg');
+  --bgcolor: rgb(9, 10, 17);
+  --bgGradient: linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(40,48,113,1) 100%);
+  /* --miles: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg'); */
 
 }
+
+/* ----------------------------------------------------------------------------------------- General */
 
 html, body {
   background-color: var(--bgcolor);
@@ -41,6 +43,20 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ----------------------------------------------------------------------------------------- Mike Font */
+
+.mikeLetter {
+  display: inline-block;
+  transition: 700ms;
+  position: relative;
+}
+
+.mikeLetter:hover {
+  color: var(--navActiveFontColor);
+  transition: 100ms;
+  transform: rotate(-15deg);
 }
 
 /* ----------------------------------------------------------------------------------------- Skills */
@@ -117,10 +133,10 @@ a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visi
   text-decoration: none;
   border: 2px solid var(--navButtonBorderColor);
   background-color: var(--navButtonBg);
-  color: black;
+  color: var(--navFontColor);
   padding: 10px 10px;
   border-radius: 8px;
-  transition: 500ms;
+  transition: 350ms;
 }
 
 a.navbutton:hover {
@@ -133,7 +149,6 @@ a.navbutton:hover {
 /* ----------------------------------------------------------------------------------------- Big block */
 
 .bigolblock {
-  background-image: var(--miles);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -160,6 +175,7 @@ a.navbutton:hover {
 
 /* ----------------------------------------------------------------------------------------- Desktop */
 /* -----------------------------------------------------------------------------------------  */
+
 @media (min-width: 500px){
   .navbar-body {
     top: 0%;
@@ -203,11 +219,11 @@ a.navbutton:hover {
     justify-content: space-between;
     padding: 0 20px;
   }
+
 /* ----------------------------------------------------------------------------------------- Big block */
 
   .bigolblock2 {
     background-color: var(--bgcolor);
-    height: 100vh;
   }
 
   .insidetheblock {

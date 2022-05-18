@@ -1,13 +1,22 @@
 import React from 'react';
 
-export default function AboutMe(){
+export default function AboutMe() {
 
+  function lightItUp(str) {
+    return str.split("").map((letter)=>{
+      return (
+        <div className="mikeLetter">{letter}</div>
+      )
+    })
+  };
 
   return (
     <div className="bigolblock">
       <div className="insidetheblock">
         <h1>About Me</h1>
-        <h4>Hey, I'm Mike.</h4>
+        <h4>
+          Hey, I'm {lightItUp(`Mike`)}.
+        </h4>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -19,5 +28,5 @@ export default function AboutMe(){
         </p>
       </div>
     </div>
-  )
+  );
 }
