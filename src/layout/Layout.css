@@ -2,8 +2,12 @@
 
 :root {
 
+  --titleColor: rgb(207, 218, 245);
+
   /* ------------------------------------------------ Main Space */
   --mainFontColor: white;
+  --mikeFont: rgb(174, 0, 255);
+  --mikeFontMuted: hsl(280, 100%, 27%);
   
   /* ------------------------------------------------ Blocks */
   
@@ -39,6 +43,10 @@ html, body {
   color: var(--mainFontColor);
 }
 
+.title {
+  color: var(--titleColor);
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -49,8 +57,10 @@ html, body {
 
 .mikeLetter {
   display: inline-block;
-  transition: 700ms;
+  transition: 1.5s;
   position: relative;
+  font-style: bold;
+  color: var(--mikeFont);
 }
 
 .mikeLetter:hover {
@@ -70,7 +80,7 @@ html, body {
 }
 
 .skills {
-  border: 1px solid hsl(280, 100%, 27%);
+  border: 1px solid var(--mikeFontMuted);
   background: linear-gradient(120deg, rgba(0,1,23,1) 0%, hsl(277, 100%, 7%) 70%);
   border-radius: 20px;
   padding: 25px 0 0 25px;
@@ -92,6 +102,34 @@ html, body {
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1px;
+}
+
+/* ----------------------------------------------------------------------------------------- Projects */
+
+.projectContainer {
+  background-color: var(--innerBlockBgColor);
+  color: var(--innerBlockFontColor);
+  border: 1px solid var(--innerBlockBorderColor);
+  border-radius: 15px;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.projectImage {
+  width: 95%;
+  border-radius: 10px;
+}
+
+.projectTech {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.tech {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
@@ -129,21 +167,27 @@ ul.navbar-buttons {
   font-size: 100%;
 }
 
-a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visited {
+a.navbutton, a.navbutton:link, a.navbutton:visited {
   text-decoration: none;
   border: 2px solid var(--navButtonBorderColor);
   background-color: var(--navButtonBg);
   color: var(--navFontColor);
   padding: 10px 10px;
   border-radius: 8px;
-  transition: 350ms;
+  transition: 500ms;
 }
 
 a.navbutton:hover {
-  border: 2px solid var(--navButtonActiveBorderColor);
+  border: 2px solid var(--mikeFont);
   background-color: var(--navButtonActiveBg);
   color: var(--navActiveFontColor);
   transition: 300ms;
+}
+
+a.navbutton:active {
+  border: 2px solid var(--navButtonActiveBorderColor);
+  color: var(--mikeFont);
+  transition: 0ms;
 }
 
 /* ----------------------------------------------------------------------------------------- Big block */
@@ -188,7 +232,7 @@ a.navbutton:hover {
   }
 
   a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visited {
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-radius: 8px;
   }
 
@@ -224,6 +268,7 @@ a.navbutton:hover {
 
   .bigolblock2 {
     background-color: var(--bgcolor);
+    height: 100vh;
   }
 
   .insidetheblock {
