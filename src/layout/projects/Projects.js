@@ -19,6 +19,9 @@ export default function Projects(){
               <p className="projectTech"><b className="title">Technology:</b>{project.tech.map((tech)=>{
                 return ( <div className="tech">{tech},</div> )
               })}</p>
+              <div className="projectButtonsContainer">
+                <a href={project.demo} className="projectButton">Demo</a><a href={project.code} className="projectButton">Code</a>
+              </div>
             </div>
           </div>
         )
