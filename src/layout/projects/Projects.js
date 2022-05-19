@@ -5,7 +5,9 @@ export default function Projects(){
 
 
   return (
-    <div className="bigolblock2 center">
+    <div className="bigolblock2 projectBlock">
+      <h1 className="title">Projects</h1>
+      <div>
       {projectList.map((project)=>{
         return (
           <div key={project.id} className="projectContainer">
@@ -19,13 +21,22 @@ export default function Projects(){
               <p className="projectTech"><b className="title">Technology:</b>{project.tech.map((tech)=>{
                 return ( <div className="tech">{tech},</div> )
               })}</p>
+
               <div className="projectButtonsContainer">
-                <a href={project.demo} className="projectButton">Demo</a><a href={project.code} className="projectButton">Code</a>
+                {project.demo && (
+                  <a href={project.demo} className="projectButton">Demo</a>
+                )}
+
+                {project.code && (
+                  <a href={project.code} className="projectButton">Code</a>
+                )}
               </div>
+
             </div>
           </div>
         )
       })}
+      </div>
     </div>
   )
 }

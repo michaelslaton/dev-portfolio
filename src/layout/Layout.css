@@ -1,23 +1,24 @@
 :root {
-  /* ------------------------------------------------ Borders */
+  /* ------------------------------------------------ BG Colors */
+    
+    --bgcolor: rgb(9, 10, 17);
+    --lighterBgColor: rgb(31, 38, 57);
+    --navButtonActiveBg: rgb(27, 33, 49);
+
+/* ------------------------------------------------ Borders */
 
   --navBorderColor: rgb(255, 255, 255);
   --navButtonActiveBorderColor: rgb(255, 255, 255);
   --projectButtonBorderColor: rgb(45, 54, 78);
+  --mutedPurple: hsl(280, 100%, 27%);
 
-  /* ------------------------------------------------ Font Colors */
+/* ------------------------------------------------ Font Colors */
 
   --titleColor: rgb(207, 218, 245);
   --primaryFontColor: rgb(159, 174, 215);
-  --mikeFont: rgb(174, 0, 255);
-  --mikeFontMuted: hsl(280, 100%, 27%);
   --navActiveFontColor: rgb(255, 255, 255);
-  
-  /* ------------------------------------------------ BG Colors */
-  
-  --bgcolor: rgb(9, 10, 17);
-  --lighterBgColor: rgb(31, 38, 57);
-  --navButtonActiveBg: rgb(27, 33, 49);
+  --mikeFont: rgb(174, 0, 255);
+
 }
 
 /* ----------------------------------------------------------------------------------------- General */
@@ -143,7 +144,7 @@ a.navbutton:active {
 }
 
 .skills {
-  border: 1px solid var(--mikeFontMuted);
+  border: 1px solid var(--mutedPurple);
   background: linear-gradient(120deg, rgba(0,1,23,1) 0%, hsl(277, 100%, 7%) 70%);
   border-radius: 20px;
   padding: 0 25px 0 25px;
@@ -165,6 +166,10 @@ a.navbutton:active {
 
 /* ----------------------------------------------------------------------------------------- Projects */
 
+.projectBlock {
+  align-self: flex-end;
+}
+
 .projectContainer {
   background-color: var(--lighterBgColor);
   border: 1px solid var(--lighterBgColor);
@@ -174,6 +179,7 @@ a.navbutton:active {
   justify-content: space-between;
   align-items: center;
   width: 75%;
+  margin: 1% auto;
 }
 
 .projectImage {
@@ -267,7 +273,8 @@ a.projectButton:active {
 /* ----------------------------------------------------------------------------------------- Big block */
 
   .bigolblock2 {
-    height: 100vh;
+    padding-top: 4%;
+    min-height: 100vh;
   }
 
   .insidetheblock {
