@@ -32,12 +32,17 @@ html, body {
 
 .title {
   color: var(--titleColor);
+  margin: 0;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.spacer {
+  margin: 2%;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
@@ -66,7 +71,6 @@ html, body {
 
 .navbar-buttons li {
   margin: 0 2%;
-  font-size: 100%;
 }
 
 a.navbutton, a.navbutton:link, a.navbutton:visited {
@@ -130,12 +134,13 @@ a.navbutton:active {
 .mikeLetter:hover {
   color: var(--navActiveFontColor);
   transition: 100ms;
-  transform: rotate(-15deg);
+  transform: rotate(-20deg);
 }
 
 /* ----------------------------------------------------------------------------------------- Skills */
 
 .skillCard {
+  color: var(--titleColor);
   width: 50px;
   text-align: center;
   font-style: bold;
@@ -170,6 +175,12 @@ a.navbutton:active {
   align-self: flex-end;
 }
 
+.projectType {
+  color: var(--titleColor);
+  font-style: italic;
+  font-size: 110%;
+}
+
 .projectContainer {
   background-color: var(--lighterBgColor);
   border: 1px solid var(--lighterBgColor);
@@ -199,7 +210,7 @@ a.navbutton:active {
 
 .tech {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 0 0 7px;
 }
 
 a.projectButton, a.projectButton:link, a.projectButton:visited {
@@ -273,7 +284,7 @@ a.projectButton:active {
 /* ----------------------------------------------------------------------------------------- Big block */
 
   .bigolblock2 {
-    padding-top: 4%;
+    padding-top: 5%;
     min-height: 100vh;
   }
 
