@@ -1,5 +1,5 @@
 import React from 'react';
-import images from './Images'
+import images from './images'
 
 export default function Skills(){
 
@@ -8,7 +8,7 @@ export default function Skills(){
     <div className="bigolblock2 center">
       <div className="skillsContainer">
       <div>
-        <h1>Skills</h1>
+        <h1 className="title">Skills</h1>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -21,7 +21,6 @@ export default function Skills(){
       </div>
 
       <div className="skills">
-
         {images.map((skill, index) => {
           return (
             <div className="skillCard" key={index}>

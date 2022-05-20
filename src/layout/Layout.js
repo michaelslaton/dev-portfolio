@@ -2,7 +2,6 @@ import './Layout.css';
 import React from "react";
 import Navbar from './navbar/Navbar';
 
-import Bigblock from './bigblock/Bigblock';
 import AboutMe from './aboutme/AboutMe';
 import Skills from './skills/Skills';
 import Projects from './projects/Projects';

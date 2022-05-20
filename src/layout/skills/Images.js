@@ -21,7 +21,7 @@ const images = [
   { name: "Css", img: css,},
   { name: "Express.js", img: express,},
   { name: "Git", img: git,},
-  { name: "Github", img: github,},
+  { name: "GitHub", img: github,},
   { name: "Heroku", img: heroku,},
   { name: "Html", img: html,},
   { name: "Javascript", img: javascript,},

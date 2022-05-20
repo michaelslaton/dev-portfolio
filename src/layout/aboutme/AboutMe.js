@@ -13,10 +13,10 @@ export default function AboutMe() {
   return (
     <div className="bigolblock">
       <div className="insidetheblock">
-        <h1 className="title">About Me</h1>
-        <h4 className="title">
-          &nbsp;&nbsp; Hey, I'm {lightItUp(`Mike`)}.
-        </h4>
+        <h1 className="title">
+          Hey, I'm {lightItUp(`Mike`)}.
+        </h1>
+        <div className="spacer"/>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
