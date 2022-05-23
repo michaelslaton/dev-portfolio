@@ -1,6 +1,8 @@
 import './Layout.css';
 import React from "react";
+
 import Navbar from './navbar/Navbar';
+import Footer from './footer/Footer';
 
 import AboutMe from './aboutme/AboutMe';
 import Skills from './skills/Skills';
@@ -13,15 +15,17 @@ export default function Layout(){
   return (
     <div>
 
-    <Navbar/>
+      <Navbar/>
 
-    <section id="about"><AboutMe/></section>
+      <section id="about"><AboutMe/></section>
 
-    <section id="skills"><Skills/></section>
+      <section id="skills"><Skills/></section>
 
-    <section id="projects"><Projects/></section>
+      <section id="projects"><Projects/></section>
 
-    <section id="contact"><Contact/></section>
+      <section id="contact"><Contact/></section>
+
+      <Footer/>
 
     </div>
   )

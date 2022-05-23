@@ -24,10 +24,15 @@
 /* ----------------------------------------------------------------------------------------- General */
 
 html, body {
+  z-index: 5;
   background-color: var(--bgcolor);
   background-attachment: fixed;
   scroll-behavior: smooth;
   color: var(--primaryFontColor);
+}
+
+div {
+  z-index: 5;
 }
 
 .title {
@@ -43,6 +48,27 @@ html, body {
 
 .spacer {
   margin: 2%;
+}
+
+.bigolblock {
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; */
+  height: 100vh;
+}
+
+.bigolblock2 {
+  min-height: 100vh;
+  padding-bottom: 20%;
+}
+
+.insidetheblock {
+  background-color: var(--lighterBgColor);
+  padding: 10px 10px 5px 10px;
+  position: relative;
+  width: 100%;
+  top: 20%;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
@@ -96,32 +122,6 @@ a.navbutton:active {
   transition: 0ms;
 }
 
-/* ----------------------------------------------------------------------------------------- Big block */
-
-.bigolblock {
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; */
-  background-color: var(--bgcolor);
-  height: 100vh;
-}
-
-.bigolblock2 {
-  background-color: var(--bgcolor);
-}
-
-
-.insidetheblock {
-  background-color: var(--lighterBgColor);
-  border: 2px solid var(--lighterBgColor);
-  border-radius: 25px;
-  width: 95%;
-  padding: 0 10px;
-  position: relative;
-  top: 50%;
-}
-
 /* ----------------------------------------------------------------------------------------- Mike Font */
 
 .mikeLetter {
@@ -143,20 +143,20 @@ a.navbutton:active {
   color: var(--titleColor);
   width: 50px;
   text-align: center;
+  justify-items: center;
   font-style: bold;
   font-size: 15px;
   margin: 12% 0;
 }
 
 .skills {
-  border: 1px solid var(--mutedPurple);
+  border-top: 1px solid var(--mutedPurple);
+  border-bottom: 1px solid var(--mutedPurple);
   background: linear-gradient(120deg, rgba(0,1,23,1) 0%, hsl(277, 100%, 7%) 70%);
-  border-radius: 20px;
-  padding: 0 25px 0 25px;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-auto-rows: minmax(10%, auto);
-  width: 100%;
+  grid-template-columns: repeat(4,20%);
+  justify-content: space-evenly;
+  padding: 4% 0;
 }
 
 .skillImage {
@@ -164,7 +164,7 @@ a.navbutton:active {
 }
 
 .skillsContainer {
-  width: 95%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -182,20 +182,20 @@ a.navbutton:active {
 }
 
 .projectContainer {
+  position: relative;
   background-color: var(--lighterBgColor);
   border: 1px solid var(--lighterBgColor);
   border-radius: 15px;
   padding: 25px 15px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 90%;
   margin: 1% auto;
 }
 
 .projectImage {
-  width: 95%;
+  width: 100%;
   border-radius: 7px;
+  margin-bottom: 6%;
 }
 
 .projectTech {
@@ -204,7 +204,8 @@ a.navbutton:active {
 }
 
 .projectButtonsContainer {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 2%;
 }
 
@@ -220,10 +221,10 @@ a.projectButton, a.projectButton:link, a.projectButton:visited {
   background-color: var(--lighterBgColor);
   color: var(--primaryFontColor);
   font-size: 120%;
-  padding: 5px 35px;
+  padding: 5px 10%;
   border-radius: 4px;
   transition: 500ms;
-  margin: 0 10%;
+  margin: 0 5%;
 }
 
 a.projectButton:hover {
@@ -267,7 +268,11 @@ a.projectButton:active {
   }
   
   .skills {
+    border: 1px solid var(--mutedPurple);
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(10%, auto);
+    border-radius: 20px;
+    padding: 0 25px 0 25px;
     margin: 2% 5%;
   }
   
@@ -281,6 +286,30 @@ a.projectButton:active {
     justify-content: space-between;
   }
 
+/* ----------------------------------------------------------------------------------------- Skills */
+
+.projectContainer {
+  background-color: var(--lighterBgColor);
+  border: 1px solid var(--lighterBgColor);
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.projectImage {
+  width: 95%;
+  margin-bottom: 0;
+}
+
+.projectButtonsContainer {
+  display: inline-block;
+}
+
+a.projectButton, a.projectButton:link, a.projectButton:visited {
+  margin: 0 10%;
+  padding: 5px 35px;
+}
+
 /* ----------------------------------------------------------------------------------------- Big block */
 
   .bigolblock2 {
@@ -289,9 +318,13 @@ a.projectButton:active {
   }
 
   .insidetheblock {
+    padding: 0 10px;
+    border: 2px solid var(--lighterBgColor);
+    border-radius: 25px;
     top: 10%;
     left: 2%;
     width: 30%;
+    width: 35%;
   }
 
 }

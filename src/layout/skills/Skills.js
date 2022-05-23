@@ -24,7 +24,7 @@ export default function Skills(){
         {images.map((skill, index) => {
           return (
             <div className="skillCard" key={index}>
-              <img className="skillImage" src={skill.img} />
+              <div><img className="skillImage" src={skill.img} /></div>
               <div>{` ${skill.name}`}</div>
             </div>
           );
