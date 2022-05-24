@@ -7,10 +7,10 @@ export default function Layout(){
     <div className="navbar-body">
       
       <ul className="navbar-buttons">
-        <li><a href="#top" className="navbutton">About</a></li>
-        <li><a href="#skills" className="navbutton">Skills</a></li>
-        <li><a href="#projects" className="navbutton">Projects</a></li>
-        <li><a href="#contact" className="navbutton">Contact</a></li>
+        <li><a href="#top" className="nav-button">About</a></li>
+        <li><a href="#skills" className="nav-button">Skills</a></li>
+        <li><a href="#projects" className="nav-button">Projects</a></li>
+        <li><a href="#contact" className="nav-button">Contact</a></li>
       </ul>
 
     </div>

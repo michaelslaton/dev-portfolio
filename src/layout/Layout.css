@@ -1,23 +1,23 @@
 :root {
   /* ------------------------------------------------ BG Colors */
     
-    --bgcolor: #090a11;
-    --lighterBgColor: #1f2639;
-    --navButtonActiveBg: #1b2131;
+    --bg-color: #090a11;
+    --lighter-bg-color: #1f2639;
+    --nav-button-active-bg: #1b2131;
 
 /* ------------------------------------------------ Borders */
 
-  --navBorderColor: #ffffff;
-  --navButtonActiveBorderColor: #ffffff;
-  --projectButtonBorderColor: #2d364e;
-  --mutedPurple: #5c008a;
+  --nav-border-color: #ffffff;
+  --nav-button-active-border-color: #ffffff;
+  --project-button-border-color: #2d364e;
+  --muted-purple: #5c008a;
 
 /* ------------------------------------------------ Font Colors */
 
-  --titleColor: #cfdaf5;
-  --primaryFontColor: #9faed7;
-  --navActiveFontColor: #ffffff;
-  --mikeFont: #ae00ff;
+  --title-color: #cfdaf5;
+  --primary-font-color: #9faed7;
+  --nav-active-font-color: #ffffff;
+  --mike-font: #ae00ff;
 
 }
 
@@ -25,10 +25,10 @@
 
 html, body {
   z-index: 5;
-  background-color: var(--bgcolor);
+  background-color: var(--bg-color);
   background-attachment: fixed;
   scroll-behavior: smooth;
-  color: var(--primaryFontColor);
+  color: var(--primary-font-color);
 }
 
 div {
@@ -36,15 +36,21 @@ div {
 }
 
 .title {
-  color: var(--titleColor);
+  color: var(--title-color);
   margin: 0;
+}
+
+.sub-title {
+  color: var(--title-color);
+  font-style: italic;
+  font-size: 110%;
 }
 
 .spacer {
   margin: 2%;
 }
 
-.bigolblock {
+.block-top {
   /* background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -52,13 +58,13 @@ div {
   height: 100vh;
 }
 
-.bigolblock2 {
+.block {
   min-height: 100vh;
   margin-bottom: 20%;
 }
 
-.textWrapper {
-  background-color: var(--lighterBgColor);
+.text-wrapper {
+  background-color: var(--lighter-bg-color);
   padding: 10px 10px 5px 10px;
   position: relative;
   width: 100%;
@@ -67,9 +73,9 @@ div {
 .small-button {
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid var(--projectButtonBorderColor);
-  background-color: var(--lighterBgColor);
-  color: var(--primaryFontColor);
+  border: 2px solid var(--project-button-border-color);
+  background-color: var(--lighter-bg-color);
+  color: var(--primary-font-color);
   font-size: 120%;
   padding: 5px 10%;
   border-radius: 4px;
@@ -79,8 +85,8 @@ div {
 /* ----------------------------------------------------------------------------------------- Navbar */
 
 .navbar-body {
-  background-color: var(--lighterBgColor);
-  border-top: 2px solid var(--bgcolor);
+  background-color: var(--lighter-bg-color);
+  border-top: 2px solid var(--bg-color);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -105,61 +111,61 @@ div {
   margin: 0 2%;
 }
 
-a.navbutton, a.navbutton:link, a.navbutton:visited {
+a.nav-button, a.nav-button:link, a.nav-button:visited {
   text-decoration: none;
-  color: var(--primaryFontColor);
-  border: 2px solid var(--lighterBgColor);
-  background-color: var(--lighterBgColor);
+  color: var(--primary-font-color);
+  border: 2px solid var(--lighter-bg-color);
+  background-color: var(--lighter-bg-color);
   padding: 10px 10px;
   border-radius: 8px;
   transition: 500ms;
 }
 
-a.navbutton:hover, a.navbutton:focus {
+a.nav-button:hover, a.nav-button:focus {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
-  border: 2px solid var(--mikeFont);
-  background-color: var(--navButtonActiveBg);
-  color: var(--navActiveFontColor);
+  border: 2px solid var(--mike-font);
+  background-color: var(--nav-button-active-bg);
+  color: var(--nav-active-font-color);
   transition: 300ms;
 }
 
-a.navbutton:active {
-  border: 2px solid var(--navButtonActiveBorderColor);
-  color: var(--mikeFont);
+a.nav-button:active {
+  border: 2px solid var(--nav-button-active-border-color);
+  color: var(--mike-font);
   transition: 0ms;
 }
 
 /* ----------------------------------------------------------------------------------------- Mike Font */
 
-.mikeLetter {
+.mike-letter {
   display: inline-block;
   transition: 1.5s;
   font-style: bold;
-  color: var(--mikeFont);
+  color: var(--mike-font);
 }
 
-.mikeLetter:hover {
-  color: var(--navActiveFontColor);
+.mike-letter:hover {
+  color: var(--nav-active-font-color);
   transition: 100ms;
   transform: rotate(-20deg);
 }
 
 /* ----------------------------------------------------------------------------------------- About Me */
 
-.aboutMe {
+/* .about-me {
   
-}
+} */
 
 /* ----------------------------------------------------------------------------------------- Skills */
 
-.skillsDesc {
+/* .skillsDesc {
 
-}
+} */
 
-.skillCard {
-  color: var(--titleColor);
+.skill-card {
+  color: var(--title-color);
   width: 50px;
   text-align: center;
   justify-items: center;
@@ -169,8 +175,8 @@ a.navbutton:active {
 }
 
 .skills {
-  border-top: 1px solid var(--mutedPurple);
-  border-bottom: 1px solid var(--mutedPurple);
+  border-top: 1px solid var(--muted-purple);
+  border-bottom: 1px solid var(--muted-purple);
   background: linear-gradient(120deg, #000117 0%, #160024 70%);
   display: grid;
   grid-template-columns: repeat(4,20%);
@@ -178,11 +184,11 @@ a.navbutton:active {
   padding: 4% 0;
 }
 
-.skillImage {
+.skill-image {
   width: 40px;
 }
 
-.skillsContainer {
+.skills-container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -190,34 +196,28 @@ a.navbutton:active {
 
 /* ----------------------------------------------------------------------------------------- Projects */
 
-.projectType {
-  color: var(--titleColor);
-  font-style: italic;
-  font-size: 110%;
-}
-
-.projectContainer {
+.project-container {
   position: relative;
-  background-color: var(--lighterBgColor);
-  border: 1px solid var(--lighterBgColor);
+  background-color: var(--lighter-bg-color);
+  border: 1px solid var(--lighter-bg-color);
   padding: 25px 15px;
   align-items: center;
   width: 100%;
   margin: 1% auto;
 }
 
-.projectImage {
+.project-image {
   width: 100%;
   border-radius: 7px;
   margin-bottom: 6%;
 }
 
-.projectTechs {
+.project-techs {
   font-size: 80%;
   font-style: italic;
 }
 
-.projectButtonsContainer {
+.project-buttons-container {
   display: flex;
   justify-content: center;
   margin-top: 2%;
@@ -236,15 +236,15 @@ a.project-button:hover, a.project-button:focus {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
-  border: 2px solid var(--mikeFont);
-  background-color: var(--navButtonActiveBg);
-  color: var(--navActiveFontColor);
+  border: 2px solid var(--mike-font);
+  background-color: var(--nav-button-active-bg);
+  color: var(--nav-active-font-color);
   transition: 300ms;
 }
 
 a.project-button:active {
-  border: 2px solid var(--navButtonActiveBorderColor);
-  color: var(--mikeFont);
+  border: 2px solid var(--nav-button-active-border-color);
+  color: var(--mike-font);
   transition: 0ms;
 }
 
@@ -253,34 +253,34 @@ a.project-button:active {
 .contact-label {
   display: block;
   font-style: italic;
-  color: var(--titleColor);
-  margin-left: 3%;
+  color: var(--title-color);
+  margin: 0 3% 1% 0;
 }
 
 .contact-form {
-  background-color: var(--lighterBgColor);
-  margin-top: 4%;
-  padding: 2% 0 4% 0;
+  background-color: var(--lighter-bg-color);
+  margin-top: 25%;
+  padding: 4% 0;
 }
 
 .contact-input {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
-  background: var(--navButtonActiveBg);
-  border-top: 1px solid var(--projectButtonBorderColor);
-  border-bottom: 1px solid var(--projectButtonBorderColor);
-  color: var(--primaryFontColor);
+  background: var(--nav-button-active-bg);
+  border-top: 2px solid var(--project-button-border-color);
+  border-bottom: 2px solid var(--project-button-border-color);
+  color: var(--primary-font-color);
   width: 100%;
   margin-bottom: 4%;
-  padding: 2% 2% 0 2%;
+  padding: 2%;
   overflow-y: auto;
   transition: 600ms;
 }
 
 .contact-input:focus, .contact-input:hover, .contact-input:active  {
-  border-top: 1px solid var(--mikeFont);
-  border-bottom: 1px solid var(--mikeFont);
+  border-top: 2px solid var(--mike-font);
+  border-bottom: 2px solid var(--mike-font);
   transition: 50ms;
 }
 
@@ -296,14 +296,14 @@ a.project-button:active {
 
 /* ----------------------------------------------------------------------------------------- General */
 
-  .bigolblock2 {
+  .block {
     padding-top: 5%;
     min-height: 100vh;
   }
 
-  .textWrapper {
+  .text-wrapper {
     padding: 0 10px;
-    border: 2px solid var(--lighterBgColor);
+    border: 2px solid var(--lighter-bg-color);
     border-radius: 25px;
   } 
 
@@ -317,7 +317,7 @@ a.project-button:active {
 
   .navbar-body {
     border-top: 0;
-    border-bottom: 2px solid var(--bgcolor);
+    border-bottom: 2px solid var(--bg-color);
     top: 0%;
   }
 
@@ -325,14 +325,14 @@ a.project-button:active {
     font-size: 120%;
   }
 
-  a.navbutton, a.navbutton:link, a.navbutton:active, a.navbutton, a.navbutton:visited {
+  a.nav-button, a.nav-button:link, a.nav-button:active, a.nav-button, a.nav-button:visited {
     padding: 10px 50px;
     border-radius: 8px;
   }
 
 /* ----------------------------------------------------------------------------------------- About Me */
 
-.aboutMe {
+.about-me {
   top: 10%;
   left: 2%;
   width: 35%;
@@ -340,13 +340,13 @@ a.project-button:active {
 
 /* ----------------------------------------------------------------------------------------- Skills */
   
-  .skillCard {
+  .skill-card {
     width: 175px;
     font-size: 18px;
   }
   
   .skills {
-    border: 1px solid var(--mutedPurple);
+    border: 1px solid var(--muted-purple);
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(10%, auto);
     border-radius: 20px;
@@ -354,11 +354,11 @@ a.project-button:active {
     margin: 2% 5%;
   }
   
-  .skillImage {
+  .skill-image {
     width: 60px;
   }
 
-  .skillsContainer {
+  .skills-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -366,25 +366,25 @@ a.project-button:active {
 
 /* ----------------------------------------------------------------------------------------- Skills */
 
-.projectContainer {
-  background-color: var(--lighterBgColor);
-  border: 1px solid var(--lighterBgColor);
+.project-container {
+  background-color: var(--lighter-bg-color);
+  border: 1px solid var(--lighter-bg-color);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
 
-.projectImage {
+.project-image {
   width: 95%;
   margin-bottom: 0;
 }
 
-.projectButtonsContainer {
+.project-buttons-container {
   display: inline-block;
 }
 
-a.projectButton, a.projectButton:link, a.projectButton:visited {
+a.project-button, a.project-button:link, a.project-button:visited {
   margin: 0 10%;
   padding: 5px 35px;
 }

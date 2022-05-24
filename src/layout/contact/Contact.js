@@ -17,9 +17,9 @@ export default function Contact(){
   };
 
   return (
-    <div className="bigolblock2">
+    <div className="block">
 
-      <div className="textWrapper">
+      <div className="text-wrapper">
         <h1 className="title">Contact</h1>
       </div>
 

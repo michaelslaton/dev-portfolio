@@ -5,9 +5,9 @@ export default function Skills(){
 
 
   return (
-    <div className="bigolblock2 center">
-      <div className="skillsContainer">
-      <div className="textWrapper skillsDesc">
+    <div className="block center">
+      <div className="skills-container">
+      <div className="text-wrapper skillsDesc">
         <h1 className="title">Skills</h1>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -23,8 +23,8 @@ export default function Skills(){
       <div className="skills">
         {images.map((skill, index) => {
           return (
-            <div className="skillCard" key={index}>
-              <div><img className="skillImage" src={skill.img} /></div>
+            <div className="skill-card" key={index}>
+              <div><img className="skill-image" src={skill.img} /></div>
               <div>{` ${skill.name}`}</div>
             </div>
           );

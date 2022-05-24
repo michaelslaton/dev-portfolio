@@ -5,14 +5,14 @@ export default function AboutMe() {
   function lightItUp(str) {
     return str.split("").map((letter)=>{
       return (
-        <div className="mikeLetter">{letter}</div>
+        <div className="mike-letter">{letter}</div>
       )
     })
   };
 
   return (
-    <div className="bigolblock">
-      <div className="textWrapper aboutMe">
+    <div className="block-top">
+      <div className="text-wrapper about-me">
         <h1 className="title">
           Hey, I'm {lightItUp(`Mike`)}.
         </h1>
