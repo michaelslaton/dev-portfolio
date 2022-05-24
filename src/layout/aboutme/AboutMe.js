@@ -12,7 +12,7 @@ export default function AboutMe() {
 
   return (
     <div className="bigolblock">
-      <div className="insidetheblock">
+      <div className="textWrapper aboutMe">
         <h1 className="title">
           Hey, I'm {lightItUp(`Mike`)}.
         </h1>

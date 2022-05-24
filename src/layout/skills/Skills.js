@@ -7,7 +7,7 @@ export default function Skills(){
   return (
     <div className="bigolblock2 center">
       <div className="skillsContainer">
-      <div>
+      <div className="textWrapper skillsDesc">
         <h1 className="title">Skills</h1>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

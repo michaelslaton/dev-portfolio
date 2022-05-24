@@ -1,23 +1,23 @@
 :root {
   /* ------------------------------------------------ BG Colors */
     
-    --bgcolor: rgb(9, 10, 17);
-    --lighterBgColor: rgb(31, 38, 57);
-    --navButtonActiveBg: rgb(27, 33, 49);
+    --bgcolor: #090a11;
+    --lighterBgColor: #1f2639;
+    --navButtonActiveBg: #1b2131;
 
 /* ------------------------------------------------ Borders */
 
-  --navBorderColor: rgb(255, 255, 255);
-  --navButtonActiveBorderColor: rgb(255, 255, 255);
-  --projectButtonBorderColor: rgb(45, 54, 78);
-  --mutedPurple: hsl(280, 100%, 27%);
+  --navBorderColor: #ffffff;
+  --navButtonActiveBorderColor: #ffffff;
+  --projectButtonBorderColor: #2d364e;
+  --mutedPurple: #5c008a;
 
 /* ------------------------------------------------ Font Colors */
 
-  --titleColor: rgb(207, 218, 245);
-  --primaryFontColor: rgb(159, 174, 215);
-  --navActiveFontColor: rgb(255, 255, 255);
-  --mikeFont: rgb(174, 0, 255);
+  --titleColor: #cfdaf5;
+  --primaryFontColor: #9faed7;
+  --navActiveFontColor: #ffffff;
+  --mikeFont: #ae00ff;
 
 }
 
@@ -40,12 +40,6 @@ div {
   margin: 0;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .spacer {
   margin: 2%;
 }
@@ -60,21 +54,33 @@ div {
 
 .bigolblock2 {
   min-height: 100vh;
-  padding-bottom: 20%;
+  margin-bottom: 20%;
 }
 
-.insidetheblock {
+.textWrapper {
   background-color: var(--lighterBgColor);
   padding: 10px 10px 5px 10px;
   position: relative;
   width: 100%;
-  top: 20%;
+}
+
+.small-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid var(--projectButtonBorderColor);
+  background-color: var(--lighterBgColor);
+  color: var(--primaryFontColor);
+  font-size: 120%;
+  padding: 5px 10%;
+  border-radius: 4px;
+  transition: 500ms;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
 
 .navbar-body {
   background-color: var(--lighterBgColor);
+  border-top: 2px solid var(--bgcolor);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -109,7 +115,10 @@ a.navbutton, a.navbutton:link, a.navbutton:visited {
   transition: 500ms;
 }
 
-a.navbutton:hover {
+a.navbutton:hover, a.navbutton:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
   border: 2px solid var(--mikeFont);
   background-color: var(--navButtonActiveBg);
   color: var(--navActiveFontColor);
@@ -137,7 +146,17 @@ a.navbutton:active {
   transform: rotate(-20deg);
 }
 
+/* ----------------------------------------------------------------------------------------- About Me */
+
+.aboutMe {
+  
+}
+
 /* ----------------------------------------------------------------------------------------- Skills */
+
+.skillsDesc {
+
+}
 
 .skillCard {
   color: var(--titleColor);
@@ -146,13 +165,13 @@ a.navbutton:active {
   justify-items: center;
   font-style: bold;
   font-size: 15px;
-  margin: 12% 0;
+  margin: 8% 0;
 }
 
 .skills {
   border-top: 1px solid var(--mutedPurple);
   border-bottom: 1px solid var(--mutedPurple);
-  background: linear-gradient(120deg, rgba(0,1,23,1) 0%, hsl(277, 100%, 7%) 70%);
+  background: linear-gradient(120deg, #000117 0%, #160024 70%);
   display: grid;
   grid-template-columns: repeat(4,20%);
   justify-content: space-evenly;
@@ -171,10 +190,6 @@ a.navbutton:active {
 
 /* ----------------------------------------------------------------------------------------- Projects */
 
-.projectBlock {
-  align-self: flex-end;
-}
-
 .projectType {
   color: var(--titleColor);
   font-style: italic;
@@ -185,10 +200,9 @@ a.navbutton:active {
   position: relative;
   background-color: var(--lighterBgColor);
   border: 1px solid var(--lighterBgColor);
-  border-radius: 15px;
   padding: 25px 15px;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 1% auto;
 }
 
@@ -198,7 +212,7 @@ a.navbutton:active {
   margin-bottom: 6%;
 }
 
-.projectTech {
+.projectTechs {
   font-size: 80%;
   font-style: italic;
 }
@@ -214,30 +228,65 @@ a.navbutton:active {
   margin: 0 0 0 7px;
 }
 
-a.projectButton, a.projectButton:link, a.projectButton:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid var(--projectButtonBorderColor);
-  background-color: var(--lighterBgColor);
-  color: var(--primaryFontColor);
-  font-size: 120%;
-  padding: 5px 10%;
-  border-radius: 4px;
-  transition: 500ms;
+a.project-button, a.project-button:link, a.project-button:visited {
   margin: 0 5%;
 }
 
-a.projectButton:hover {
+a.project-button:hover, a.project-button:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
   border: 2px solid var(--mikeFont);
   background-color: var(--navButtonActiveBg);
   color: var(--navActiveFontColor);
   transition: 300ms;
 }
 
-a.projectButton:active {
+a.project-button:active {
   border: 2px solid var(--navButtonActiveBorderColor);
   color: var(--mikeFont);
   transition: 0ms;
+}
+
+/* ----------------------------------------------------------------------------------------- Contact */
+
+.contact-label {
+  display: block;
+  font-style: italic;
+  color: var(--titleColor);
+  margin-left: 3%;
+}
+
+.contact-form {
+  background-color: var(--lighterBgColor);
+  margin-top: 4%;
+  padding: 2% 0 4% 0;
+}
+
+.contact-input {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  background: var(--navButtonActiveBg);
+  border-top: 1px solid var(--projectButtonBorderColor);
+  border-bottom: 1px solid var(--projectButtonBorderColor);
+  color: var(--primaryFontColor);
+  width: 100%;
+  margin-bottom: 4%;
+  padding: 2% 2% 0 2%;
+  overflow-y: auto;
+  transition: 600ms;
+}
+
+.contact-input:focus, .contact-input:hover, .contact-input:active  {
+  border-top: 1px solid var(--mikeFont);
+  border-bottom: 1px solid var(--mikeFont);
+  transition: 50ms;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* ----------------------------------------------------------------------------------------- Desktop */
@@ -245,9 +294,30 @@ a.projectButton:active {
 
 @media (min-width: 500px){
 
+/* ----------------------------------------------------------------------------------------- General */
+
+  .bigolblock2 {
+    padding-top: 5%;
+    min-height: 100vh;
+  }
+
+  .textWrapper {
+    padding: 0 10px;
+    border: 2px solid var(--lighterBgColor);
+    border-radius: 25px;
+  } 
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 /* ----------------------------------------------------------------------------------------- Nav */
 
   .navbar-body {
+    border-top: 0;
+    border-bottom: 2px solid var(--bgcolor);
     top: 0%;
   }
 
@@ -259,6 +329,14 @@ a.projectButton:active {
     padding: 10px 50px;
     border-radius: 8px;
   }
+
+/* ----------------------------------------------------------------------------------------- About Me */
+
+.aboutMe {
+  top: 10%;
+  left: 2%;
+  width: 35%;
+}
 
 /* ----------------------------------------------------------------------------------------- Skills */
   
@@ -291,6 +369,7 @@ a.projectButton:active {
 .projectContainer {
   background-color: var(--lighterBgColor);
   border: 1px solid var(--lighterBgColor);
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -309,22 +388,5 @@ a.projectButton, a.projectButton:link, a.projectButton:visited {
   margin: 0 10%;
   padding: 5px 35px;
 }
-
-/* ----------------------------------------------------------------------------------------- Big block */
-
-  .bigolblock2 {
-    padding-top: 5%;
-    min-height: 100vh;
-  }
-
-  .insidetheblock {
-    padding: 0 10px;
-    border: 2px solid var(--lighterBgColor);
-    border-radius: 25px;
-    top: 10%;
-    left: 2%;
-    width: 30%;
-    width: 35%;
-  }
 
 }

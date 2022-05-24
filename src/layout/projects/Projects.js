@@ -5,8 +5,10 @@ export default function Projects(){
 
 
   return (
-    <div className="bigolblock2 projectBlock">
-      <h1 className="title">Projects</h1>
+    <div className="bigolblock2">
+      <div className="textWrapper">
+        <h1 className="title">Projects</h1>
+      </div>
       <div>
         {projectList.map((project) => {
           return (
@@ -20,7 +22,7 @@ export default function Projects(){
                 <div className="projectType">{project.type}</div>
                 <div className="spacer"/>
                 <p>{project.description}</p>
-                <p className="projectTech">
+                <p className="projectTechs">
                   <b className="title">Technology:</b>
                   {project.tech.map((tech, i) => {
                     i += 1;
@@ -33,11 +35,11 @@ export default function Projects(){
                 </p>
 
                 <div className="projectButtonsContainer">
-                    <a href={project.code} className="projectButton">
+                    <a href={project.code} className="small-button project-button">
                       Code
                     </a>
                   {project.demo && (
-                    <a href={project.demo} className="projectButton">
+                    <a href={project.demo} className="small-button project-button">
                       Demo
                     </a>
                   )}
