@@ -65,12 +65,12 @@ div {
 
 .text-wrapper {
   background-color: var(--lighter-bg-color);
-  padding: 10px 10px 5px 10px;
+  padding: 25px 25px 5px 25px;
   position: relative;
   width: 100%;
 }
 
-.small-button {
+.small-button { 
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid var(--project-button-border-color);
@@ -80,6 +80,22 @@ div {
   padding: 5px 10%;
   border-radius: 4px;
   transition: 500ms;
+}
+
+.small-button:hover, .small-button:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  border: 2px solid var(--mike-font);
+  background-color: var(--nav-button-active-bg);
+  color: var(--nav-active-font-color);
+  transition: 300ms;
+}
+
+.small-button:active {
+  border: 2px solid var(--nav-button-active-border-color);
+  color: var(--mike-font);
+  transition: 0ms;
 }
 
 /* ----------------------------------------------------------------------------------------- Navbar */
@@ -228,24 +244,8 @@ a.nav-button:active {
   margin: 0 0 0 7px;
 }
 
-a.project-button, a.project-button:link, a.project-button:visited {
+a.project-button {
   margin: 0 5%;
-}
-
-a.project-button:hover, a.project-button:focus {
-  outline-style: none;
-  box-shadow: none;
-  border-color: transparent;
-  border: 2px solid var(--mike-font);
-  background-color: var(--nav-button-active-bg);
-  color: var(--nav-active-font-color);
-  transition: 300ms;
-}
-
-a.project-button:active {
-  border: 2px solid var(--nav-button-active-border-color);
-  color: var(--mike-font);
-  transition: 0ms;
 }
 
 /* ----------------------------------------------------------------------------------------- Contact */
@@ -254,7 +254,7 @@ a.project-button:active {
   display: block;
   font-style: italic;
   color: var(--title-color);
-  margin: 0 3% 1% 0;
+  margin: 0 0 1% 3%;
 }
 
 .contact-form {
@@ -273,7 +273,7 @@ a.project-button:active {
   color: var(--primary-font-color);
   width: 100%;
   margin-bottom: 4%;
-  padding: 2%;
+  padding: 3%;
   overflow-y: auto;
   transition: 600ms;
 }
@@ -281,12 +281,16 @@ a.project-button:active {
 .contact-input:focus, .contact-input:hover, .contact-input:active  {
   border-top: 2px solid var(--mike-font);
   border-bottom: 2px solid var(--mike-font);
-  transition: 50ms;
+  transition: 200ms;
 }
 
 .contact-button-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+}
+
+.form-submit {
+  margin-right: 5%;
 }
 
 /* ----------------------------------------------------------------------------------------- Desktop */
