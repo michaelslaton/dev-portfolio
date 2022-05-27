@@ -3,9 +3,9 @@ import React from 'react';
 export default function AboutMe() {
 
   function lightItUp(str) {
-    return str.split("").map((letter)=>{
+    return str.split("").map((letter,i)=>{
       return (
-        <div className="mike-letter">{letter}</div>
+        <div key={i} className="mike-letter">{letter}</div>
       )
     })
   };
