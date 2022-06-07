@@ -1,5 +1,5 @@
 :root {
-  /* ------------------------------------------------ BG Colors */
+/* ------------------------------------------------ BG Colors */
     
     --bg-color: #090a11;
     --lighter-bg-color: #1f2639;
@@ -51,10 +51,6 @@ div {
 }
 
 .block-top {
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; */
   height: 100vh;
 }
 
@@ -167,12 +163,6 @@ a.nav-button:active {
   transition: 100ms;
   transform: rotate(-20deg);
 }
-
-/* ----------------------------------------------------------------------------------------- About Me */
-
-/* .about-me {
-  
-} */
 
 /* ----------------------------------------------------------------------------------------- Skills */
 
