@@ -11,11 +11,13 @@ export default function Projects() {
         {projectList.map((project,index) => {
           return (
             <div key={index} className="project-container">
-              <div>
+              <div className="project-image-wrapper">
+                <div>
                 <img src={project.image} className="project-image" />
+                </div>
               </div>
 
-              <div className="projectText">
+              <div className="project-text">
                 <h2 className="title">{project.name}</h2>
                 <div className="sub-title">{project.type}</div>
                 <div className="spacer" />
@@ -33,19 +35,9 @@ export default function Projects() {
                 </div>
 
                 <div className="project-buttons-container">
-                  <a
-                    href={project.code}
-                    className="small-button project-button"
-                  >
-                    Code
-                  </a>
+                  <a href={project.code} className="small-button project-button" target="_blank">Code</a>
                   {project.demo && (
-                    <a
-                      href={project.demo}
-                      className="small-button project-button"
-                    >
-                      Demo
-                    </a>
+                    <a href={project.demo} className="small-button project-button" target="_blank">Demo</a>
                   )}
                 </div>
               </div>
