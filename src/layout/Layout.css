@@ -78,7 +78,11 @@ div {
   transition: 500ms;
 }
 
-.small-button:hover, .small-button:focus {
+.small-button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.small-button:hover, .small-button:focus-visible {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
@@ -133,7 +137,11 @@ a.nav-button, a.nav-button:link, a.nav-button:visited {
   transition: 500ms;
 }
 
-a.nav-button:hover, a.nav-button:focus {
+a.nav-button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+a.nav-button:hover, a.nav-button:focus-visible {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
@@ -149,7 +157,7 @@ a.nav-button:active {
   transition: 0ms;
 }
 
-/* ----------------------------------------------------------------------------------------- Mike Font */
+/* ----------------------------------------------------------------------------------------- About Me */
 
 .mike-letter {
   display: inline-block;
@@ -162,6 +170,22 @@ a.nav-button:active {
   color: var(--nav-active-font-color);
   transition: 100ms;
   transform: rotate(-20deg);
+}
+
+.about-me {
+  top: -4%;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 6px var(--lighter-bg-color);
+}
+
+.profile-image-wrapper {
+  display:flex;
+  justify-content: center;
+  padding: 2%;
 }
 
 /* ----------------------------------------------------------------------------------------- Skills */
@@ -206,16 +230,27 @@ a.nav-button:active {
   position: relative;
   background-color: var(--lighter-bg-color);
   border: 1px solid var(--lighter-bg-color);
-  padding: 25px 15px;
+  padding: 5% 3%;
   align-items: center;
   width: 100%;
   margin: 1% auto;
 }
 
+.project-text {
+  width: 100%;
+}
+
+.project-image-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
 .project-image {
   width: 100%;
   border-radius: 7px;
-  margin-bottom: 6%;
 }
 
 .project-techs {
@@ -268,7 +303,11 @@ a.project-button {
   transition: 600ms;
 }
 
-.contact-input:focus, .contact-input:hover, .contact-input:active  {
+a.nav-button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.contact-input:focus-visible, .contact-input:hover, .contact-input:active  {
   border-top: 2px solid var(--mike-font);
   border-bottom: 2px solid var(--mike-font);
   transition: 200ms;
@@ -327,9 +366,22 @@ a.project-button {
 /* ----------------------------------------------------------------------------------------- About Me */
 
 .about-me {
-  top: 10%;
-  left: 2%;
+  top: -5%;
+  left: 4%;
   width: 35%;
+}
+
+.profile-image {
+  border: solid 8px var(--lighter-bg-color);
+}
+
+.profile-image-wrapper {
+  width: 40%;
+  top: 10%;
+  left: 15%;
+  position: relative;
+  justify-content: flex-start;
+  padding: 1%;
 }
 
 /* ----------------------------------------------------------------------------------------- Skills */
@@ -364,14 +416,24 @@ a.project-button {
   background-color: var(--lighter-bg-color);
   border: 1px solid var(--lighter-bg-color);
   border-radius: 15px;
+  padding: 1% 0;
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
 
+.project-image-wrapper {
+  align-items: center;
+  margin-left: 1.5%;
+  margin-bottom: 0;
+}
+
+.project-text {
+  width: 75%;
+}
+
 .project-image {
   width: 95%;
-  margin-bottom: 0;
 }
 
 .project-buttons-container {

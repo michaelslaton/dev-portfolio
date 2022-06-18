@@ -1,4 +1,5 @@
 import React from 'react';
+import Mike from './images/mike.png';
 
 export default function AboutMe() {
 
@@ -12,6 +13,9 @@ export default function AboutMe() {
 
   return (
     <div className="block-top">
+      <div className="profile-image-wrapper">
+      <img src={Mike} className="profile-image"/>
+      </div>
       <div className="text-wrapper about-me">
         <h1 className="title">
           Hey, I'm {lightItUp(`Mike`)}.
