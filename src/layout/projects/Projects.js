@@ -24,6 +24,7 @@ export default function Projects() {
                 <p>{project.description}</p>
                 <div className="project-techs">
                   <b className="title">Technology:</b>
+                  
                   {project.tech.map((tech, i) => {
                     i += 1;
                     if (project.tech.length === i) {
@@ -32,6 +33,7 @@ export default function Projects() {
                       return <div key={i} className="tech">{tech} ,</div>;
                     }
                   })}
+
                 </div>
 
                 <div className="project-buttons-container">
