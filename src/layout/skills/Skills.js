@@ -25,7 +25,7 @@ export default function Skills(){
           return (
             <div className="skill-card" key={index}>
               <div><img className="skill-image" src={skill.img} /></div>
-              <div>{` ${skill.name}`}</div>
+              <div>{`${skill.name}`}</div>
             </div>
           );
         })}
