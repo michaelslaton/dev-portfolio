@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Mike from './images/mike.png';
 import MiniNav from './MiniNav'
 import Info from './Info'
 
@@ -17,7 +16,7 @@ export default function AboutMe() {
   return (
     <div className="block-top">
       <div className="profile-image-wrapper">
-      <img src={Mike} className="profile-image"/>
+      <img src={process.env.PUBLIC_URL + `/imgs/mike.png`} className="profile-image"/>
       </div>
       <div className="text-wrapper about-me">
         <h1 className="title">

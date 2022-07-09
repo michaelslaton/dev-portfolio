@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from './photoSlider/Slider'
 
 export default function Info({ nav }){
 
@@ -8,8 +9,8 @@ export default function Info({ nav }){
         School: Thinkful<br/>
         Course: Software-Engineering<br/>
       </div>
-      <div className={`${nav} text-wrapper`}>
-        muh photos
+      <div className={`${nav} image-wrapper`}>
+        <Slider/>
       </div>
     </div>
   )

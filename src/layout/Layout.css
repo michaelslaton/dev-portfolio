@@ -50,18 +50,23 @@ div {
   margin: 2%;
 }
 
-.block-top {
-  height: 100vh;
+.block-top, .block-bottom{
+  min-height: 100vh;
 }
 
-.block {
+/* .block {
   min-height: 100vh;
-  margin-bottom: 20%;
-}
+} */
 
 .text-wrapper {
   background-color: var(--lighter-bg-color);
   padding: 1% 0% 1% 4%;
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper {
+  background-color: var(--lighter-bg-color);
   position: relative;
   width: 100%;
 }
@@ -238,8 +243,6 @@ a.nav-button:active {
   position: absolute;
   top:0%;
   right:0%;
-  height:100%;
-  width:100%;
   transition: 250ms;
 }
 
@@ -247,14 +250,13 @@ a.nav-button:active {
   position: absolute;
   top:0%;
   right:100%;
-  height:100%;
-  width:100%;
   transition: 250ms;
 }
 
 .info-wrapper {
   position: relative;
-  overflow:hidden;
+  overflow: visible;
+  min-height:500px;
   z-index: 90;
 }
 
@@ -275,13 +277,11 @@ a.nav-button:active {
 }
 
 .skills {
-  border-top: 1px solid var(--muted-purple);
-  border-bottom: 1px solid var(--muted-purple);
-  background: linear-gradient(120deg, #000117 0%, #160024 70%);
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(4,20%);
   justify-content: space-evenly;
-  padding: 4% 0;
+  justify-items: center;
+  margin: 4% 0;
 }
 
 .skill-image {
@@ -354,7 +354,7 @@ a.project-button {
 
 .contact-form {
   background-color: var(--lighter-bg-color);
-  margin-top: 25%;
+  /* margin-top: 4px; */
   padding: 4% 0;
 }
 
@@ -400,8 +400,8 @@ a.nav-button:focus:not(.focus-visible) {
 /* ----------------------------------------------------------------------------------------- General */
 
   .block {
-    padding-top: 5%;
     min-height: 100vh;
+    padding-top: 5%;
   }
 
   .text-wrapper {
