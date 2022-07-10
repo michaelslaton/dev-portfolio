@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact(){
   const form = useRef();
@@ -45,6 +47,19 @@ export default function Contact(){
           <input className="small-button form-submit" type="submit" value="Send"/>
           </div>
         </form>
+      </div>
+
+      <div className="contact-icon-wrapper">
+        <div className="contact-icon">
+          <a href="https://github.com/michaelslaton" target="_blank">
+            <FontAwesomeIcon icon={faGithub}/>
+          </a>
+        </div>
+        <div className="contact-icon">
+          <a href="https://www.linkedin.com/in/michaelslatondev/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin}/>
+          </a>
+        </div>
       </div>
 
     </div>
