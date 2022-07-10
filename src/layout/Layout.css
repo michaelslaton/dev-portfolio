@@ -392,6 +392,26 @@ a.nav-button:focus:not(.focus-visible) {
   margin-right: 5%;
 }
 
+.contact-icon-wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.contact-icon {
+  margin: 0 10%;
+}
+.contact-icon a{
+  color: var(--primary-font-color);
+}
+.contact-icon a:hover {
+  color: var(--nav-active-font-color);
+  transition: 300ms;
+}
+.contact-icon a:active {
+  color: var(--mike-font);
+}
+
 /* ----------------------------------------------------------------------------------------- Desktop */
 /* -----------------------------------------------------------------------------------------  */
 

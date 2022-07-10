@@ -4,12 +4,10 @@ import sliderData from './sliderData';
 import SliderBtn from './SliderBtn';
 
 export default function Slider(){
-
   const [slideIndex, setSlideIndex] = useState(1)
   const maxLength = sliderData.length;
 
-  function clickHandler(direction){
-    console.log(`clicked! Max length:`, maxLength, ` Index: `, slideIndex);
+  const clickHandler = (direction) => {
     if(direction === `next`){
 
       if(slideIndex !== maxLength) setSlideIndex(slideIndex + 1)
@@ -23,9 +21,7 @@ export default function Slider(){
     }
   }
 
-  
-
-  function moveDot (index){
+  const moveDot = (index) => {
     setSlideIndex(index)
   }
 
