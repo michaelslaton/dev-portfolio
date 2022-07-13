@@ -1,5 +1,5 @@
 import React from "react";
-import projectList from "./ProjectData";
+import projectList from "./data/ProjectData";
 
 export default function Projects() {
   return (
@@ -10,6 +10,7 @@ export default function Projects() {
       <div>
         {projectList.map((project,index) => {
           return (
+            <>
             <div key={index} className="project-container">
               <div className="project-image-wrapper">
                 <div>
@@ -44,6 +45,12 @@ export default function Projects() {
                 </div>
               </div>
             </div>
+            { projectList.length-1 !== index && (
+              <div className='text-wrapper'>
+                <div className='divider'/>
+              </div>
+            )}
+            </>
           );
         })}
       </div>

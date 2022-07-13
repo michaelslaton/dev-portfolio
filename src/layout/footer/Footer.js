@@ -4,7 +4,7 @@ export default function Footer(){
 
   return (
     <div>
-      
+      Some words perhaps?
     </div>
   )
 }

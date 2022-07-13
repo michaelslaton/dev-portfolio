@@ -3,7 +3,7 @@ import MiniNav from './MiniNav'
 import Info from './Info'
 
 export default function AboutMe() {
-  const [nav,setNav] = useState('photography-inactive');
+  const [nav,setNav] = useState('edu');
 
   function lightItUp(str) {
     return str.split("").map((letter,i)=>{
