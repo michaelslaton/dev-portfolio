@@ -50,19 +50,24 @@ div {
   margin: 2%;
 }
 
+.divider {
+
+  width: 90%;
+  height: 2px;
+  margin: 2% auto;
+  background-color: var(--project-button-border-color);
+}
+
 .block-top, .block-bottom{
   min-height: 100vh;
 }
 
-/* .block {
-  min-height: 100vh;
-} */
-
 .text-wrapper {
   background-color: var(--lighter-bg-color);
-  padding: 1% 0% 1% 4%;
+  padding: 1% 3%;
   position: relative;
-  width: 100%;
+  width: 100vw;
+  overflow: auto;
 }
 
 .image-wrapper {
@@ -197,6 +202,8 @@ a.nav-button:active {
   display: flex;
   justify-content: center;
   width: 100%;
+  border-top: solid 2px var(--project-button-border-color);
+  border-bottom: solid 2px var(--project-button-border-color);
 }
 
 .miniNav-buttons {
@@ -239,32 +246,63 @@ a.nav-button:active {
   transition: 0ms;
 }
 
-.photography-active{
+.active-screen{
   position: absolute;
   top:0%;
-  right:0%;
-  transition: 250ms;
+  opacity: 1;
+  transition: opacity ease-in-out 0.2s;
 }
 
-.photography-inactive{
+.inactive-screen{
   position: absolute;
-  top:0%;
-  right:100%;
-  transition: 250ms;
+  top: 0%;
+  opacity: 0;
+  transition: opacity ease-in-out 0.2s;
 }
 
 .info-wrapper {
   position: relative;
   overflow: visible;
-  min-height:500px;
+  min-height: 325px;
   z-index: 90;
+  background-color: var(--lighter-bg-color);
+}
+
+.school {
+  display: grid;
+  grid-template-columns: 20% auto;
+  margin: 3% 0;
+}
+.school-title {
+  color: var(--title-color);
+  font-size: 110%;
+  vertical-align: bottom;
+}
+.school-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.school a {
+  color: inherit;
+  transition: 500ms;
+  font-style: italic;
+}
+.school a:hover {
+  color: var(--nav-active-font-color);
+  transition: 300ms;
+}
+.school a:active{
+  color: var(--mike-font);
+  transition: 0ms;
+}
+.school a:focus:not(.focus-visible)  {
+  color: var(--nav-active-font-color);
+  transition: 300ms;
+  outline: none;
 }
 
 /* ----------------------------------------------------------------------------------------- Skills */
-
-/* .skillsDesc {
-
-} */
 
 .skill-card {
   color: var(--title-color);
@@ -303,7 +341,6 @@ a.nav-button:active {
   padding: 5% 3%;
   align-items: center;
   width: 100%;
-  margin: 1% auto;
 }
 
 .project-text {
@@ -330,7 +367,7 @@ a.nav-button:active {
 
 .project-buttons-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-top: 2%;
 }
 
@@ -340,7 +377,7 @@ a.nav-button:active {
 }
 
 a.project-button {
-  margin: 0 5%;
+  margin: 2% 2% 0 2%;
 }
 
 /* ----------------------------------------------------------------------------------------- Contact */
@@ -354,8 +391,7 @@ a.project-button {
 
 .contact-form {
   background-color: var(--lighter-bg-color);
-  /* margin-top: 4px; */
-  padding: 4% 0;
+  padding-bottom: 4%;
 }
 
 .contact-input {
@@ -395,11 +431,11 @@ a.nav-button:focus:not(.focus-visible) {
 .contact-icon-wrapper {
   width: 100%;
   display: inline-flex;
-  justify-content: center;
+  justify-content: end;
   font-size: 40px;
 }
 .contact-icon {
-  margin: 0 10%;
+  margin: 0 5% 0 0;
 }
 .contact-icon a{
   color: var(--primary-font-color);

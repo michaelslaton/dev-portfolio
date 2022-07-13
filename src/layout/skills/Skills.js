@@ -1,5 +1,5 @@
 import React from 'react';
-import images from './images'
+import images from './data/images'
 
 export default function Skills(){
 
