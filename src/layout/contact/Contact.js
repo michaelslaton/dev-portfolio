@@ -27,36 +27,36 @@ export default function Contact(){
         <div className='divider'/>
       </div>
 
-      <div className="contact-form">
+      <div className="contact__form">
         <form ref={form} onSubmit={sendEmail}>
           <div>
-            <label className="contact-label">Name</label>
-            <input className="contact-input" type="text" name="user_name" required/>
+            <label className="contact__label">Name</label>
+            <input className="contact__input" type="text" name="user_name" required/>
           </div>
 
           <div>
-            <label className="contact-label">Email</label>
-            <input className="contact-input" type="email" name="user_email" required/>
+            <label className="contact__label">Email</label>
+            <input className="contact__input" type="email" name="user_email" required/>
           </div>
 
           <div>
-            <label className="contact-label">Message</label>
-            <textarea className="contact-input" name="message" rows="8" required/>
+            <label className="contact__label">Message</label>
+            <textarea className="contact__input" name="message" rows="8" required/>
           </div>
 
-          <div className="contact-button-container">
-          <input className="small-button form-submit" type="submit" value="Send"/>
+          <div className="contact__button--container">
+          <input className="small-button contact__form-submit" type="submit" value="Send"/>
           </div>
         </form>
       </div>
 
-      <div className="contact-icon-wrapper">
-        <div className="contact-icon">
+      <div className="contact__icon--wrapper">
+        <div className="contact__icon">
           <a href="https://github.com/michaelslaton" target="_blank">
             <FontAwesomeIcon icon={faGithub}/>
           </a>
         </div>
-        <div className="contact-icon">
+        <div className="contact__icon">
           <a href="https://www.linkedin.com/in/michaelslatondev/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin}/>
           </a>
