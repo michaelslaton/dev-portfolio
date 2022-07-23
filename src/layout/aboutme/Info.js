@@ -5,44 +5,48 @@ import schoolList from './data/schools.js';
 export default function Info({ nav }){
 
   return (
-    <div className='info-wrapper'>      
+    <div className='info-wrapper'>
       <div className={`${nav === 'edu' ? 'active-screen' : 'inactive-screen'} text-wrapper`}>
 
         {schoolList.map((school,i)=>{
           if(school.length-1 !== i){
           return (
-            <>
+            <div>
               <div className='school' key={school.id}>
               <div>
-                <span className='school-title'>School:</span>
+                <span className='school__title'>School:</span>
               </div>
-              <div className='school-info'>
+              <div className='school__info'>
                 <a href={school.link} target='_blank'>{school.name}</a>
               </div>
               <div>
-                <span className='school-title'>Course:</span>
+                <span className='school__title'>Course:</span>
               </div>
-              <div className='school-info'>
+              <div className='school__info'>
                 {school.course}
               </div>
               <div>
-                <span className='school-title'>Dates:</span>
+                <span className='school__title'>Dates:</span>
               </div>
-              <div className='school-info'>
+              <div className='school__info'>
                 {school.dates}
               </div>
             </div>
             { schoolList.length-1 !== i && (
               <div className='divider'/>
             )}
-            </>
+            </div>
           )}
         })}
 
       </div>
       
-      <div className={`${nav === 'photo' ? 'active-screen' : 'inactive-screen'} image-wrapper`}>
+      <div className={`${nav === 'photo' ? 'active-screen' : 'inactive-screen'}`}>
         <Slider/>
+      </div>
+
+      <div className={`${nav === 'misc' ? 'active-screen' : 'inactive-screen'}`}>
+        Some Stuff
       </div>
     </div>
   )

@@ -90,3 +90,11 @@
 .dot.active {
   background: var(--mike-font);
 }
+
+@media (min-width: 500px){
+
+  .container-slider{
+    height: 500px;
+  }
+  
+}
