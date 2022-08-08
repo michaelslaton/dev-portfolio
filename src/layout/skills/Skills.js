@@ -1,12 +1,12 @@
 import React from 'react';
-import images from './data/images'
+import './skills.css';
+import images from './data/images';
 
 export default function Skills(){
 
 
   return (
-    <div className="block text-wrapper">
-      <div className="skills-container">
+    <div className="skills__wrapper text-wrapper">
         <div>
           <h1 className="title">Skills</h1>
           <p>
@@ -31,7 +31,6 @@ export default function Skills(){
           })}
 
         </div>
-      </div>
     </div>
   );
 }

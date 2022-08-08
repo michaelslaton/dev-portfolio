@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from './photoSlider/Slider';
-import schoolList from './data/schools.js';
+import schoolList from '../data/schools.js';
 
 export default function Info({ nav }){
 
