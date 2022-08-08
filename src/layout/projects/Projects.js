@@ -1,10 +1,11 @@
 import React from "react";
+import './projects.css';
 import projectList from "./data/ProjectData";
 
 export default function Projects() {
   return (
-    <div className="block">
-      <div className="text-wrapper">
+    <div className="projects__wrapper text-wrapper">
+      <div>
         <h1 className="title">Projects</h1>
       </div>
       <div>
@@ -19,12 +20,12 @@ export default function Projects() {
               </div>
 
               <div>
-                <h2 className="title">{project.name}</h2>
-                <div className="sub-title">{project.type}</div>
+                <h2 className="project__title">{project.name}</h2>
+                <div className="project__sub-title">{project.type}</div>
                 <div className="spacer" />
                 <p>{project.description}</p>
                 <div className="project__tech-list">
-                  <b className="title">Technology:</b>
+                  <b className="project_title">Technology:</b>
                   
                   {project.tech.map((tech, i) => {
                     i += 1;
@@ -46,8 +47,8 @@ export default function Projects() {
               </div>
             </div>
             { projectList.length-1 !== index && (
-              <div className='text-wrapper'>
-                <div className='divider'/>
+              <div>
+                <div className="divider"/>
               </div>
             )}
             </>

@@ -1,10 +1,11 @@
 import React from "react";
+import './navbar.css';
 
 
 export default function Layout(){
 
   return (
-    <div className="navbar">
+    <div className="navbar__wrapper">
       
       <ul className="navbar__buttons-wrapper">
         <li><a href="#top" className="navbar__button">About</a></li>

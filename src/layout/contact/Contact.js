@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './contact.css';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -19,12 +20,11 @@ export default function Contact(){
   };
 
   return (
-    <div className="block-bottom">
-
+    <div className="">
       <div className="text-wrapper">
         <h1 className="title">Contact</h1>
         <p>Lets work together!</p>
-        <div className='divider'/>
+        <div className="divider"/>
       </div>
 
       <div className="contact__form">
