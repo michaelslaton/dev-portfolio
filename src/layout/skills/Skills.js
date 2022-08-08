@@ -1,6 +1,6 @@
 import React from 'react';
 import './skills.css';
-import images from './data/images';
+import skills from './data/skills';
 
 export default function Skills(){
 
@@ -21,10 +21,10 @@ export default function Skills(){
         </div>
 
         <div className="skills-list">
-          {images.map((skill, index) => {
+          {skills.map((skill, index) => {
             return (
               <div className="skill-card" key={index}>
-                <div><img className="skill-card__image" src={skill.img} /></div>
+                <div><img className="skill-card__image" src={skill.img} alt={skill.name}/></div>
                 <div>{`${skill.name}`}</div>
               </div>
             );

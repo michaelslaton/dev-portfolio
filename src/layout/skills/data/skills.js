@@ -1,4 +1,4 @@
-const images = [
+const skills = [
   { 
     name: "Adobe Creative Suite",
     img: process.env.PUBLIC_URL + `/imgs/skillicons/adobe.png`,
@@ -65,4 +65,4 @@ const images = [
   },
 ];
 
-export default images;
+export default skills;
