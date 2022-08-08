@@ -21,83 +21,74 @@
   
   }
   
-  /* ----------------------------------------------------------------------------------------- General */
-  
-  html, body {
-    background-color: var(--bg-color);
-    color: var(--primary-font-color);
-    scroll-behavior: smooth;
-    z-index: 5;
-    overflow: auto;
-  
-    margin:0;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  div {
-    z-index: 5;
-  }
-  
-  .title {
-    color: var(--title-color);
-    margin-bottom: 3%;
-  }
-  
-  .spacer {
-    margin: 2%;
-  }
-  
-  .divider {
-    background-color: var(--project__button-border-color);
-    height: 2px;
-    width: 90%;
-    margin: 2% auto;
-  }
-  
-  .text-wrapper {
-    background-color: var(--lighter-bg-color);
-    box-sizing:border-box;
-    width: 100%;
-    padding: 2% 3%;
-  }
-  
-  .small-button { 
-    background-color: var(--lighter-bg-color);
-    color: var(--primary-font-color);
-    box-sizing:border-box;
-    font-size: 120%;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid var(--project__button-border-color);
-    border-radius: 4px;
-    padding: 5px 10%;
-    transition: 500ms;
-  }
-  .small-button:focus:not(.focus-visible) {
-    outline: none;
-  }
-  .small-button:hover, .small-button:focus-visible {
-    background-color: var(--nav-button-active-bg);
-    outline-style: none;
-    box-shadow: none;
-    border-color: transparent;
-    border: 2px solid var(--mike-font);
-    color: var(--nav-active-font-color);
-    transition: 300ms;
-  }
-  .small-button:active {
-    border: 2px solid var(--nav-button-active-border-color);
-    color: var(--mike-font);
-    transition: 0ms;
-  }
-  
-  /* ----------------------------------------------------------------------------------------- Desktop */
-  /* -----------------------------------------------------------------------------------------  */
+html, body {
+  background-color: var(--bg-color);
+  color: var(--primary-font-color);
+  scroll-behavior: smooth;
+  z-index: 5;
+  overflow: auto;
+
+  margin:0;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+div, img{
+  z-index: 5;
+}
+
+.title {
+  color: var(--title-color);
+  margin-bottom: 3%;
+}
+
+.divider {
+  background-color: var(--project__button-border-color);
+  height: 2px;
+  width: 90%;
+  margin: 2% auto;
+}
+
+.text-wrapper {
+  background-color: var(--lighter-bg-color);
+  box-sizing:border-box;
+  width: 100%;
+  padding: 2% 3%;
+}
+
+.button { 
+  background-color: var(--lighter-bg-color);
+  color: var(--primary-font-color);
+  box-sizing:border-box;
+  font-size: 120%;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid var(--project__button-border-color);
+  border-radius: 4px;
+  padding: 5px 10%;
+  transition: 500ms;
+}
+.button:focus:not(.focus-visible) {
+  outline: none;
+}
+.button:hover, .button:focus-visible {
+  background-color: var(--nav-button-active-bg);
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  border: 2px solid var(--mike-font);
+  color: var(--nav-active-font-color);
+  transition: 300ms;
+}
+.button:active {
+  border: 2px solid var(--nav-button-active-border-color);
+  color: var(--mike-font);
+  transition: 0ms;
+}
   
 @media (min-width: 500px){
   

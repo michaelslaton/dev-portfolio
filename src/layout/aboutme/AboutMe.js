@@ -17,14 +17,18 @@ export default function AboutMe() {
   return (
       <div className="about-me__wrapper">
         <div className="profile-image__wrapper">
-          <img src={process.env.PUBLIC_URL + `/imgs/mike.png`} className="profile-image"/>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/mike.png`}
+            className="profile-image"
+            alt="Michael Slaton"
+          />
         </div>
         <div className="text-wrapper">
-          <h1 className="title">
+          <h1 className="title mike__title">
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
-          <p>
-            I am a Full-Stack Developer, with a bias passion for Front-End Development, currently living in Emeryville, California.
+          <p className="about-me__p">
+            I am a Full-Stack Developer, with a passion for front-end development, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App or UI and seeing a project come together 
           </p>
         </div>

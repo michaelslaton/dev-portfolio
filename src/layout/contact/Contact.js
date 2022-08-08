@@ -45,7 +45,7 @@ export default function Contact(){
           </div>
 
           <div className="contact__button--container">
-          <input className="small-button contact__form-submit" type="submit" value="Send"/>
+          <input className="button contact__form-submit" type="submit" value="Send"/>
           </div>
         </form>
       </div>

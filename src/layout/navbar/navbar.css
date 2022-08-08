@@ -52,9 +52,10 @@ a.navbar__button:active {
 }
 
 @media (min-width: 500px){
-  .navbar {
+  .navbar__wrapper {
     border-top: 0;
     border-bottom: 2px solid var(--bg-color);
+    bottom: auto;
     top: 0%;
   }
   .navbar__buttons-wrapper li {

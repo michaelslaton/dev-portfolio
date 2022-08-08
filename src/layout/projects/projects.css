@@ -47,26 +47,23 @@
     border-radius: 15px;
     padding: 1% 0;
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
     width: 75%;
   }
   .project__image {
-    width: 95%;
+    width: 500px;
   }
   .project__image--wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1.5%;
+    margin: 0 1.5% 0 2%;
     margin-bottom: 0;
-    height: 100%;
-    width: 100%;
+    min-width: 500px;
   }
   .project__buttons-container {
     display: inline-block;
+    margin-top: 25px;
   }
   a.project__button, a.project__button:link, a.project__button:visited {
-    margin: 0 10%;
+    margin: 0 10% 0 0;
     padding: 5px 35px;
   }
 }
