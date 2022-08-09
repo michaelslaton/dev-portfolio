@@ -6,7 +6,7 @@ export default function Skills(){
 
 
   return (
-    <div className="skills__wrapper text-wrapper">
+    <div className="skills__wrapper block block__width">
         <div>
           <h1 className="title">Skills</h1>
           <p>
@@ -21,9 +21,9 @@ export default function Skills(){
         </div>
 
         <div className="skills-list">
-          {skills.map((skill, index) => {
+          {skills.map((skill, i) => {
             return (
-              <div className="skill-card" key={index}>
+              <div className="skill-card" key={i}>
                 <div><img className="skill-card__image" src={skill.img} alt={skill.name}/></div>
                 <div>{`${skill.name}`}</div>
               </div>

@@ -20,12 +20,10 @@ export default function Contact(){
   };
 
   return (
-    <div className="">
-      <div className="text-wrapper">
-        <h1 className="title">Contact</h1>
-        <p>Lets work together!</p>
-        <div className="divider"/>
-      </div>
+    <div className="contact__wrapper block block__width">
+      <h1 className="title">Contact</h1>
+      <p>Lets work together!</p>
+      <div className="divider"/>
 
       <div className="contact__form">
         <form ref={form} onSubmit={sendEmail}>

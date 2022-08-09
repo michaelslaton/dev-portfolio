@@ -43,21 +43,26 @@ div, img{
 
 .title {
   color: var(--title-color);
-  margin-bottom: 3%;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0;
 }
 
 .divider {
   background-color: var(--project__button-border-color);
   height: 2px;
   width: 90%;
-  margin: 2% auto;
+  margin: 15px auto;
 }
 
-.text-wrapper {
+.block {
   background-color: var(--lighter-bg-color);
   box-sizing:border-box;
   width: 100%;
-  padding: 2% 3%;
+  padding: 0 3%;
 }
 
 .button { 
@@ -89,7 +94,27 @@ div, img{
   color: var(--mike-font);
   transition: 0ms;
 }
+
+@media (min-width: 600px){
+  .block {
+    padding: 2% 3%;
+  }
+}
+
+@media (min-width: 900px) {
+  .block {
+    padding: 2% 2.5%;
+  }
+}
   
-@media (min-width: 500px){
-  
+@media (min-width: 1200px){
+  .divider {
+    margin: 1% auto;
+  }
+  .block {
+    padding: 1.5% 1.3%;
+  }
+  .block__width {
+    width: 60vw;
+  }
 }

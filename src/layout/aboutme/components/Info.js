@@ -5,14 +5,14 @@ import schoolList from '../data/schools.js';
 export default function Info({ nav }){
 
   return (
-    <div className='info-wrapper'>
-      <div className={`${nav === 'edu' ? 'active-screen' : 'inactive-screen'} text-wrapper`}>
+    <div className={`info-wrapper block`}>
+      <div className={`${nav === 'edu' ? 'active-screen' : 'inactive-screen'} info-wrapper__padding`}>
 
         {schoolList.map((school,i)=>{
           if(school.length-1 !== i){
           return (
-            <div>
-              <div className='school' key={school.id}>
+            <div key={school.id}>
+              <div className='school'>
               <div>
                 <span className='school__title'>School:</span>
               </div>
@@ -45,7 +45,7 @@ export default function Info({ nav }){
         <Slider/>
       </div>
 
-      <div className={`${nav === 'misc' ? 'active-screen' : 'inactive-screen'}`}>
+      <div className={`${nav === 'misc' ? 'active-screen' : 'inactive-screen'} info-wrapper__padding`}>
         Some Stuff
       </div>
     </div>

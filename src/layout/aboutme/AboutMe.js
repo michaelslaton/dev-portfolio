@@ -15,19 +15,20 @@ export default function AboutMe() {
   };
 
   return (
-      <div className="about-me__wrapper">
+      <div className="about-me__wrapper block__width">
         <div className="profile-image__wrapper">
           <img
-            src={process.env.PUBLIC_URL + `/imgs/mike.png`}
+            src={process.env.PUBLIC_URL + `/imgs/mike.jpg`}
             className="profile-image"
             alt="Michael Slaton"
           />
+          <div className="about-me__mobile-filler"/>
         </div>
-        <div className="text-wrapper">
+        <div className="block top-corner">
           <h1 className="title mike__title">
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
-          <p className="about-me__p">
+          <p>
             I am a Full-Stack Developer, with a passion for front-end development, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App or UI and seeing a project come together 
           </p>
