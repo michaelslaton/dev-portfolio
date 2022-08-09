@@ -1,6 +1,6 @@
 .container-slider {
   max-width: 100%;
-  height: 325px;
+  height: 270px;
   margin: 0 auto 0;
   position: relative;
   overflow: hidden;
@@ -72,7 +72,7 @@
 
 .container-dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -91,10 +91,64 @@
   background: var(--mike-font);
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
+  .container-slider {
+    height: 400px;
+  }
+}
 
-  .container-slider{
+@media (min-width: 900px) {
+  .container-slider {
     height: 500px;
   }
   
+  .btn-slide {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev {
+    left: 100px;
+  }
+  
+  .next {
+    right: 100px;
+  }
+}
+
+@media (min-width: 1200px){
+  
+  .btn-slide {
+    width: 50px;
+    height: 50px;
+  }
+
+  .prev {
+    left: 25px;
+  }
+  
+  .next {
+    right: 25px;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  .prev {
+    left: 60px;
+  }
+  
+  .next {
+    right: 60px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .prev {
+    left: 180px;
+  }
+  
+  .next {
+    right: 180px;
+  }
 }
