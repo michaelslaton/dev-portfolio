@@ -168,6 +168,16 @@
     margin-left: 310px;
     opacity: 1;
   }
+  .mike_about {
+    position: relative;
+    left: -2%;
+    opacity: 0;
+  }
+  .mike_about-load-in {
+    left: 0%;
+    opacity: 1;
+    transition: 1.7s ease-in-out;
+  }
 
   .about-me__mobile-filler {
     display: none;
@@ -259,13 +269,13 @@
     height: 500px;
   }
   .profile-image__wrapper {
-    min-height: 32vh;
+    min-height: 37vh;
   }
 
 }
 
 @media (min-width: 1900px) {
   .profile-image__wrapper {
-    min-height: 35vh;
+    min-height: 37vh;
   }
 }

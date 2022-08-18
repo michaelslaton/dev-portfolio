@@ -1,3 +1,26 @@
 .footer__wrapper {
   margin-bottom: 10vh;
+  width: 100%;
+  text-align: end;
+}
+.footer__copyright {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-right: 1%;
+  opacity: .3;
+}
+
+@media (min-width: 1200px){
+  .footer__wrapper {
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    width: 60vw;
+    text-align: end;
+  }
+  .footer__copyright {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-right: 5%;
+    opacity: .3;
+  }
 }

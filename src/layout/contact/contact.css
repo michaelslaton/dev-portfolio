@@ -88,7 +88,7 @@ a.navbar__button:focus:not(.focus-visible) {
 @media (min-width: 1200px){
   .contact__wrapper {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border-radius: 4px 4px 25px 25px;
     padding: 1.5% 1.3%;
   }
@@ -98,6 +98,11 @@ a.navbar__button:focus:not(.focus-visible) {
   .contact__form {
     box-sizing: border-box;
     margin: 0 auto;
+    opacity: 0;
+  }
+  .contact__form--load-in {
+    opacity: 1;
+    transition: 1s ease-in-out;
   }
   .contact__form-submit {
     margin-right: 0%;

@@ -28,6 +28,16 @@
 }
 
 @media (min-width: 1200px){
+  .skill-card {
+    position: relative;
+    top: 40%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+  }
+  .skill-load-in {
+    top:0;
+    opacity: 1;
+  }
 
   .skills__wrapper {
     margin: 0 auto;
