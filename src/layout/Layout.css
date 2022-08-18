@@ -65,6 +65,13 @@ p {
   padding: 0 3%;
 }
 
+.anchor {
+  display:block;
+  position: relative;
+  top: 0;
+  visibility: hidden;
+}
+
 .button { 
   background-color: var(--lighter-bg-color);
   color: var(--primary-font-color);
@@ -122,6 +129,10 @@ p {
   .block__width {
     width: 60vw;
   }
+
+  .anchor {
+    top: -30px;
+  }
 }
 
 @media (min-width: 1400px){
@@ -132,6 +143,18 @@ p {
 
 @media (min-width: 1800px){
   .top-sensor {
-    height: 27vh;
+    height: 32vh;
+  }
+  .anchor {
+    top: -40px;
+  }
+}
+
+@media (min-width: 1900px){
+  .top-sensor {
+    height: 30vh;
+  }
+  .anchor {
+    top: -30px;
   }
 }

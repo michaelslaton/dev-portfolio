@@ -23,11 +23,15 @@ export default function Layout(){
 
       <section id="about"><AboutMe/></section>
 
-      <section id="skills"><Skills/></section>
+      <div id="skills" className="anchor"/>
+      <section><Skills/></section>
 
-      <section id="projects"><Projects/></section>
+      
+      <div id="projects" className="anchor"/>
+      <section><Projects/></section>
 
-      <section id="contact"><Contact/></section>
+      <div id="contact" className="anchor"/>
+      <section><Contact/></section>
 
       <Footer/>
 

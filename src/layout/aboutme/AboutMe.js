@@ -33,7 +33,7 @@ export default function AboutMe() {
           <h1 className={`title mike__title ${titleVisible ? "mike_title--load-in" : ""}`} ref={titleRef}>
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
-          <p>
+          <p className={`mike_about ${titleVisible ? `mike_about-load-in` : ``}`}>
             I am a Full-Stack Developer, with a passion for front-end development, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App or UI and seeing a project come together 
           </p>

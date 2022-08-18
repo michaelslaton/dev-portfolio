@@ -1,11 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './contact.css';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact(){
+  const [formVisible, setFormVisible] = useState(false);
+  const { ref: formShow, inView: visible } = useInView();
   const form = useRef();
+
+  if(visible && formVisible !== true) setFormVisible(true);
 
   function sendEmail(e){
     e.preventDefault();
@@ -25,7 +30,7 @@ export default function Contact(){
       <p>Lets work together!</p>
       <div className="divider"/>
 
-      <div className="contact__form">
+      <div ref={formShow} className={`contact__form ${formVisible ? `contact__form--load-in` : ``}`}>
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label className="contact__label">Name</label>
