@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './aboutme.css';
 import MiniNav from './components/MiniNav';
 import Info from './components/Info';
 
 export default function AboutMe() {
   const [nav,setNav] = useState('edu');
+  const [titleVisible, setTitleVisible] = useState(false);
+  const { ref: titleRef, inView: visible } = useInView();
+
+  if(visible && titleVisible !== true) setTitleVisible(true);
 
   function lightItUp(str) {
     return str.split("").map((letter,i)=>{
@@ -25,7 +30,7 @@ export default function AboutMe() {
           <div className="about-me__mobile-filler"/>
         </div>
         <div className="block top-corner">
-          <h1 className="title mike__title">
+          <h1 className={`title mike__title ${titleVisible ? "mike_title--load-in" : ""}`} ref={titleRef}>
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
           <p>

@@ -1,14 +1,14 @@
 
 .mike__letter {
   display: inline-block;
-  transition: 1.5s;
+  transition: 1.7s;
   font-style: bold;
   color: var(--mike-font);
 }
 .mike__letter:hover {
   color: var(--nav-active-font-color);
   transition: 100ms;
-  transform: rotate(-20deg);
+  transform: translateX(0) translateY(-12%) scaleY(1.5);
 }
 .mike__title {
   margin: 0;
@@ -125,7 +125,7 @@
 }
 .school__info {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .school a {
@@ -158,9 +158,15 @@
 @media (min-width: 1200px){
   .mike__title {
     margin: 0;
-    margin-left: 310px;
+    margin-left: 400px;
     position: relative;
     z-index: 6;
+    opacity: 0;
+    transition: 1s ease-in-out;
+  }
+  .mike_title--load-in {
+    margin-left: 310px;
+    opacity: 1;
   }
 
   .about-me__mobile-filler {
@@ -217,7 +223,10 @@
 
 @media (min-width: 1400px) {
   .mike__title {
-    margin-left: 320px;
+    margin-left: 480px;
+  }
+  .mike_title--load-in {
+    margin-left: 310px;
   }
   
   .about-me__wrapper .block p {
@@ -235,6 +244,9 @@
 
 @media (min-width: 1800px) {
   .mike__title {
+    margin-left: 520px;
+  }
+  .mike_title--load-in {
     margin-left: 320px;
   }
   
@@ -247,6 +259,13 @@
     height: 500px;
   }
   .profile-image__wrapper {
-    min-height: 37vh;
+    min-height: 32vh;
+  }
+
+}
+
+@media (min-width: 1900px) {
+  .profile-image__wrapper {
+    min-height: 35vh;
   }
 }
