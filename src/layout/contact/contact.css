@@ -98,11 +98,6 @@ a.navbar__button:focus:not(.focus-visible) {
   .contact__form {
     box-sizing: border-box;
     margin: 0 auto;
-    opacity: 0;
-  }
-  .contact__form--load-in {
-    opacity: 1;
-    transition: 1s ease-in-out;
   }
   .contact__form-submit {
     margin-right: 0%;

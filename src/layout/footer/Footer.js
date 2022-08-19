@@ -6,7 +6,7 @@ export default function Footer(){
   return (
     <div className="footer__wrapper">
       <div className="footer__copyright">
-        Michael Slaton©
+        Michael Slaton ©
       </div>
     </div>
   )
