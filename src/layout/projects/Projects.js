@@ -15,7 +15,7 @@ export default function Projects() {
               <div className="project">
                 <div className="project__image--wrapper">
                   <div>
-                  <img src={project.image} className="project__image" />
+                  <img src={project.image} className="project__image" alt={project.name} />
                   </div>
                 </div>
 
@@ -38,9 +38,9 @@ export default function Projects() {
                   </div>
 
                   <div className="project__buttons-container">
-                    <a href={project.code} className="button project__button" target="_blank">Code</a>
+                    <a href={project.code} className="button project__button" rel="noreferrer" target="_blank">Code</a>
                     {project.demo && (
-                      <a href={project.demo} className="button project__button" target="_blank">Demo</a>
+                      <a href={project.demo} className="button project__button" rel="noreferrer" target="_blank">Demo</a>
                     )}
                   </div>
                 </div>

@@ -19,6 +19,19 @@
   width: 50px;
 }
 
+.learn-skills--wrapper {
+  width: 100%;
+  border: solid 1px red;
+}
+.learn-skills--list {
+  display: inline-flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.learn-skill {
+
+}
+
 @media (min-width: 600px){
 
 }

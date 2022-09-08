@@ -50,12 +50,12 @@ export default function Contact(){
 
       <div className="contact__icon--wrapper">
         <div className="contact__icon">
-          <a href="https://github.com/michaelslaton" target="_blank">
+          <a href="https://github.com/michaelslaton" rel="noreferrer" target="_blank">
             <FontAwesomeIcon icon={faGithub}/>
           </a>
         </div>
         <div className="contact__icon">
-          <a href="https://www.linkedin.com/in/michaelslatondev/" target="_blank">
+          <a href="https://www.linkedin.com/in/michaelslatondev/" rel="noreferrer" target="_blank">
             <FontAwesomeIcon icon={faLinkedin}/>
           </a>
         </div>
