@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './skills.css';
-import skills from './data/skills';
+import { skills, learnSkills } from './data/skills';
 
 export default function Skills(){
   const [skillVisible, setSkillVisible] = useState(false);
@@ -14,15 +14,22 @@ export default function Skills(){
         <div>
           <h1 className="title">Skills</h1>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            My aim is to be versatile, I love learning new skills. Listed below are my current skills, but if I don't know it, I'm more than willing to learn it!
           </p>
         </div>
+        
+        {/* <section className="learn-skills--wrapper">
+            <ul className="learn-skills--list">
+              {learnSkills.map((skill, i)=>{
+                      i += 1;
+                      if (learnSkills.length === i) {
+                        return <li key={i} className="learn-skill">{skill}</li>;
+                      } else {
+                        return <li key={i} className="learn-skill">{skill} ,</li>;
+                      }
+                    })}
+            </ul>
+        </section> */}
 
         <div className="skills-list" ref={skillRef}>
           {skills.map((skill, i) => {

@@ -17,7 +17,7 @@ export default function Info({ nav }){
                 <span className='school__title'>School:</span>
               </div>
               <div className='school__info'>
-                <a href={school.link} target='_blank'>{school.name}</a>
+                <a href={school.link} rel="noreferrer" target='_blank'>{school.name}</a>
               </div>
               <div>
                 <span className='school__title'>Course:</span>
@@ -37,6 +37,7 @@ export default function Info({ nav }){
             )}
             </div>
           )}
+          else return <></>
         })}
 
       </div>
