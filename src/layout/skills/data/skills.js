@@ -65,10 +65,4 @@ const skills = [
   },
 ];
 
-const learnSkills = [
-  "Typescript",
-  "Sass",
-  "Angular",
-];
-
-export { skills, learnSkills };
+export default skills ;
