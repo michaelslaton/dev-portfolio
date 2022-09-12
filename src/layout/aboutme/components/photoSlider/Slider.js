@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Slider.css';
-import sliderData from './sliderData';
+import sliderData from './data/sliderData';
 import SliderBtn from './SliderBtn';
 
 export default function Slider(){

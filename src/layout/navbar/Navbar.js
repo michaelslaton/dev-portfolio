@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import './navbar.css';
+import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import "./navbar.css";
 
 
 export default function Navbar({ shift }){
