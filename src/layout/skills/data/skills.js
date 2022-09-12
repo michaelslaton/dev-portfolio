@@ -1,67 +1,84 @@
+import adobe from "../imgs/adobe.png";
+import bootstrap from "../imgs/bootstrap.png";
+import css from "../imgs/css.png";
+import express from "../imgs/express.png";
+import git from "../imgs/git.png";
+import github from "../imgs/github.png";
+import heroku from "../imgs/adobe.png";
+import html from "../imgs/html.png";
+import javascript from "../imgs/javascript.png";
+import knex from "../imgs/knex.png";
+import mochaChai from "../imgs/mochaChai.png";
+import npm from "../imgs/npm.png";
+import postgresql from "../imgs/postgresql.png";
+import react from "../imgs/react.png";
+import restful from "../imgs/restful.png";
+import vercel from "../imgs/vercel.png";
+
 const skills = [
   { 
     name: "Adobe Creative Suite",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/adobe.png`,
+    img: adobe,
   },
   { 
     name: "Bootstrap.js",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/bootstrap.png`,
+    img: bootstrap,
   },
   { 
     name: "Css",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/css.png`,
+    img: css,
   },
   { 
     name: "Express.js",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/express.png`,
+    img: express,
   },
   { 
     name: "Git",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/git.png`,
+    img: git,
   },
   { 
     name: "GitHub",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/github.png`,
+    img: github,
   },
   { 
     name: "Heroku",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/heroku.png`,
+    img: heroku,
   },
   { 
     name: "Html",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/html.png`,
+    img: html,
   },
   { 
     name: "Javascript",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/javascript.png`,
+    img: javascript,
   },
   { 
     name: "Knex.js",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/knex.png`,
+    img: knex,
   },
   { 
     name: "Mocha & Chai",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/mochaChai.png`,
+    img: mochaChai,
   },
   { 
     name: "NPM",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/npm.png`,
+    img: npm,
   },
   { 
     name: "PostgreSQL",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/postgresql.png`,
+    img: postgresql,
   },
   { 
     name: "React.js",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/react.png`,
+    img: react,
   },
   { 
     name: "RESTful API",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/restful.png`,
+    img: restful,
   },
   { 
     name: "Vercel",
-    img: process.env.PUBLIC_URL + `/imgs/skillicons/vercel.png`,
+    img: vercel,
   },
 ];
 

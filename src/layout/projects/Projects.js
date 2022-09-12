@@ -1,6 +1,6 @@
 import React from "react";
-import './projects.css';
-import projectList from "./data/ProjectData";
+import "./projects.css";
+import projectList from "./data/projectData";
 
 export default function Projects() {
   return (
@@ -24,7 +24,7 @@ export default function Projects() {
                   <div className="project__sub-title">{project.type}</div>
                   <p>{project.description}</p>
                   <div className="project__tech-list">
-                    <b className="project_title">Technology:</b>
+                    <b className="project_title title">Technology:</b>
                     
                     {project.tech.map((tech, i) => {
                       i += 1;

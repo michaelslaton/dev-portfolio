@@ -1,13 +1,13 @@
-import './Layout.css';
+import "./Layout.css";
 import React from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
-import Navbar from './navbar/Navbar';
-import AboutMe from './aboutme/AboutMe';
-import Skills from './skills/Skills';
-import Projects from './projects/Projects';
-import Contact from './contact/Contact';
-import Footer from './footer/Footer';
+import Navbar from "./navbar/Navbar";
+import AboutMe from "./aboutme/AboutMe";
+import Skills from "./skills/Skills";
+import Projects from "./projects/Projects";
+import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
 
 export default function Layout(){
   const { ref: navRef, inView: visible } = useInView();

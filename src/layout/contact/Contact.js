@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
-import './contact.css';
-import emailjs from 'emailjs-com';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import React, { useRef } from "react";
+import "./contact.css";
+import emailjs from "emailjs-com";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact(){
   const form = useRef();
@@ -10,7 +10,7 @@ export default function Contact(){
   function sendEmail(e){
     e.preventDefault();
 
-    emailjs.sendForm('service_nzb16q8', 'template_sdcvvpi', form.current, 'CwuWBhkep40JC8Sn0')
+    emailjs.sendForm("service_nzb16q8", "template_sdcvvpi", form.current, "CwuWBhkep40JC8Sn0")
       .then((result) => {
           console.log(result.text);
       }, (error) => {
