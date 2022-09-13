@@ -1,11 +1,11 @@
-import restApp from "../projectImages/restaurantApp.jpg";
-import weLoveMovies from "../projectImages/weLoveMovies.jpg";
+import resApp from "../assets/imgs/projectImages/restaurantApp.jpg";
+import weLoveMovies from "../assets/imgs/projectImages/weLoveMovies.jpg";
 
 const projectList = [
   {
     id:1,
     name: "Reservations Application",
-    image: restApp,
+    image: resApp,
     type: "(Full-Stack)",
     description: "A retro styled, full-stack web application that allows a restaurant to create, search, and edit reservations as well as manage seating inside the restaurant as their guests arrive.",
     tech: ["Javascript","React.js","HTML","Css","Knex.js","Express.js"],

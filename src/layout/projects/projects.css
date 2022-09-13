@@ -1,3 +1,7 @@
+p {
+  font-family: manrope;
+}
+
 .projects__wrapper {
   margin: 0;
 }
@@ -14,10 +18,12 @@
   color: var(--title-color);
   margin-top: 0;
   margin-bottom: 3%;
+  font-family: manrope-bold;
 }
 .project__sub-title {
   color: var(--title-color);
-  font-size: 110%;
+  font-size: 105%;
+  font-family: manrope-bold;
   font-style: italic;
 }
 .project__image {

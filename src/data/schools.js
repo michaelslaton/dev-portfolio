@@ -1,3 +1,6 @@
+import thinkfulimg from "../assets/imgs/schools/thinkful.png";
+import sfccimg from "../assets/imgs/schools/sfcc.png";
+
 const schoolList = [
   {
     id:1,
@@ -5,6 +8,7 @@ const schoolList = [
     course: "Software Engineering",
     dates: "2021 - 2022",
     link: "https://www.thinkful.com/",
+    img: thinkfulimg,
   },
   {
     id:2,
@@ -12,6 +16,7 @@ const schoolList = [
     course: "Creative Photography",
     dates: "2011 - 2014",
     link: "https://www.sfcc.edu/",
+    img: sfccimg,
   },
 ];
 

@@ -1,4 +1,5 @@
 import React from "react";
+import "./mininav.css";
 
 export default function MiniNav({ setNav }){
   return (
