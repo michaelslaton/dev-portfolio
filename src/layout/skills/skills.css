@@ -1,3 +1,7 @@
+p {
+  font-family: manrope;
+}
+
 .skills__wrapper {
   margin: 0;
 }
@@ -12,6 +16,7 @@
   margin: 10% auto 15%;
   text-align: center;
   color: var(--title-color);
+  font-family: manrope;
   font-style: bold;
   font-size: 90%;
 }

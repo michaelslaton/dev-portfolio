@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "manrope-bold";
+  src: url("../assets/fonts/Manrope-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* ------------------------------------------------ BG Colors */
       
@@ -44,6 +51,10 @@ html, body {
   -webkit-tap-highlight-color: transparent;
 }
 
+abbr[title] {
+  text-decoration: none;
+}
+
 div, img{
   z-index: 5;
 }
@@ -52,6 +63,7 @@ div, img{
   color: var(--title-color);
   margin: 0;
   margin-bottom: 15px;
+  font-family: manrope-bold;
 }
 
 p {
@@ -83,6 +95,7 @@ p {
   background-color: var(--lighter-bg-color);
   color: var(--primary-font-color);
   box-sizing:border-box;
+  font-family: manrope;
   font-size: 120%;
   text-decoration: none;
   text-transform: uppercase;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./aboutme.css";
-import mike from "./imgs/mike.jpg";
-import MiniNav from "./components/MiniNav";
-import Info from "./components/Info";
+import mike from "../../assets/imgs/mike.jpg";
+import MiniNav from "./components/mininav/MiniNav";
+import Info from "./components/info/Info";
 
 export default function AboutMe() {
   const [nav,setNav] = useState("edu");
@@ -34,7 +34,7 @@ export default function AboutMe() {
           <h1 className={`title mike__title ${titleVisible ? "mike_title--load-in" : ""}`} ref={titleRef}>
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
-          <p className={`mike_about ${titleVisible ? "mike_about-load-in" : ""}`}>
+          <p className={`mike__about ${titleVisible ? "mike_about-load-in" : ""}`}>
             I am a Full-Stack Developer, with a passion for front-end, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App or UI and seeing a project as all of the pieces come together.
           </p>

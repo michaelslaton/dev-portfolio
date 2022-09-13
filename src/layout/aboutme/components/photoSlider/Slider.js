@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import './Slider.css';
-import sliderData from './data/sliderData';
-import SliderBtn from './SliderBtn';
+import React, {useState} from "react";
+import "./Slider.css";
+import sliderData from "../../../../data/sliderData";
+import SliderBtn from "./SliderBtn";
 
 export default function Slider(){
   const [slideIndex, setSlideIndex] = useState(1)
@@ -37,8 +37,8 @@ export default function Slider(){
           </div>
         )
       })}
-      <SliderBtn handler={clickHandler} direction={'next'}/>
-      <SliderBtn handler={clickHandler} direction={'prev'}/>
+      <SliderBtn handler={clickHandler} direction={"next"}/>
+      <SliderBtn handler={clickHandler} direction={"prev"}/>
 
       <div className="container-dots">
         {Array.from({length: maxLength}).map((dot,i)=> (

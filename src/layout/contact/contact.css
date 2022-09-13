@@ -1,3 +1,7 @@
+p {
+  font-family: manrope;
+}
+
 .contact__form {
   box-sizing:border-box;
   background-color: var(--lighter-bg-color);
@@ -98,6 +102,7 @@ a.navbar__button:focus:not(.focus-visible) {
   .contact__form {
     box-sizing: border-box;
     margin: 0 auto;
+    width: 97%;
   }
   .contact__form-submit {
     margin-right: 0%;
