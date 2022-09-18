@@ -25,7 +25,7 @@ export default function Contact(){
       <p>Lets work together!</p>
       <div className="divider"/>
 
-      <div className={`contact__form`}>
+      <div className={"contact__form"}>
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label className="contact__label">Name</label>
