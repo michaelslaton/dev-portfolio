@@ -35,7 +35,7 @@ export default function AboutMe() {
             Hey, I'm {lightItUp(`Mike`)}.
           </h1>
           <p className={`mike__about ${titleVisible ? "mike_about-load-in" : ""}`}>
-            I am a Full-Stack Developer, with a passion for front-end, currently living in Emeryville, California.
+            I am a Full-Stack Developer, with a passion for Front-End, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App or UI and seeing a project as all of the pieces come together.
           </p>
         </div>
