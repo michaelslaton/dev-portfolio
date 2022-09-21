@@ -11,7 +11,7 @@ export default function Projects() {
       <div>
         {projectList.map((project,i) => {
           return (
-            <div key={i}>
+            <div key={project.id}>
               <div className="project">
                 <div className="project__image--wrapper">
                   <div>
