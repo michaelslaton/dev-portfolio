@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  border-top: solid 3px var(--project__button-border-color);
-  border-bottom: solid 3px var(--project__button-border-color);
 }
 .miniNav__buttons-wrapper {
   box-sizing:border-box;

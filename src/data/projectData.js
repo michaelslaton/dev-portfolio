@@ -5,7 +5,7 @@ const projectList = [
   {
     id:1,
     name: "Reservations Application",
-    image: resApp,
+    img: resApp,
     type: "(Full-Stack)",
     description: "A retro styled, full-stack web application that allows a restaurant to create, search, and edit reservations as well as manage seating inside the restaurant as their guests arrive.",
     tech: ["Javascript","React.js","HTML","Css","Knex.js","Express.js"],
@@ -15,7 +15,7 @@ const projectList = [
   {
     id:2,
     name: "We Love Movies",
-    image: weLoveMovies,
+    img: weLoveMovies,
     type: "(Back-End)",
     description: "A back-end application intended to return data on movies, movie reviews, and theaters a movie is playing at.",
     tech: ["Javascript","Knex.js","Express.js"],
@@ -24,9 +24,9 @@ const projectList = [
   {
     id:3,
     name: "Developer Portfolio",
-    image: weLoveMovies,
+    img: weLoveMovies,
     type: "(Front-End)",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "I learned a lot while building this portfolio, and I intend to continue learning as I update it through my career as a software developer. I have designed this portfolio to be easy to customize and add data to as I acquire new skills and create or contribute to new projects.",
     tech: ["Javascript","React.js", "HTML", "Css"],
     code: "https://github.com/michaelslaton/dev-portfolio",
   },
