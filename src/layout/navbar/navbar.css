@@ -55,11 +55,11 @@ a.navbar__button:active {
 
 @media (min-width: 600px){
   .navbar__wrapper {
-    height: 6%;
+    height: 7%;
   }
   .navbar__buttons-wrapper li {
     font-size: 130%;
-    margin: 0 6%;
+    margin: 0 4%;
   }
 }
 

@@ -22,7 +22,7 @@ export default function Contact(){
   return (
     <div className="contact__wrapper block block__width">
       <h1 className="title">Contact</h1>
-      <p>Lets work together!</p>
+      <p>{"Lets work together!"}</p>
       <div className="divider"/>
 
       <div className={"contact__form"}>
