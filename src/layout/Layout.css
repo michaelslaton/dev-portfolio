@@ -58,12 +58,18 @@ abbr[title] {
 .light-up {
   display: inline-block;
   color: var(--primary-font-color);
+  -webkit-transition: color 1.7s;
+  -o-transition: color 1.7s;
   transition: color 1.7s;
-  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .light-up:hover {
   color: var(--nav-active-font-color);
   font-weight: bolder;
+  -webkit-transition: color 1ms;
+  -o-transition: color 1ms;
   transition: color 1ms;
 }
 
@@ -91,7 +97,8 @@ p {
 
 .block {
   background-color: var(--lighter-bg-color);
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   width: 100%;
   padding: 0 3%;
 }
@@ -106,7 +113,8 @@ p {
 .button { 
   background-color: var(--lighter-bg-color);
   color: var(--primary-font-color);
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   font-family: manrope;
   font-size: 120%;
   text-decoration: none;
@@ -114,6 +122,8 @@ p {
   border: 2px solid var(--project__button-border-color);
   border-radius: 4px;
   padding: 5px 10%;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
   transition: 500ms;
 }
 .button:focus:not(.focus-visible) {
@@ -122,15 +132,20 @@ p {
 .button:hover, .button:focus-visible {
   background-color: var(--nav-button-active-bg);
   outline-style: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: transparent;
   border: 2px solid var(--mike-font);
   color: var(--nav-active-font-color);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 .button:active {
   border: 2px solid var(--nav-button-active-border-color);
   color: var(--mike-font);
+  -webkit-transition: 0ms;
+  -o-transition: 0ms;
   transition: 0ms;
 }
 

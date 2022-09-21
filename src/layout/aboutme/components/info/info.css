@@ -14,19 +14,26 @@
 }
 
 .school {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   margin: 2% auto 0;
   width: 75%;
 }
 .school-grid-span-2 {
+  -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 .school__wrapper {
   width: 100%;
 }
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .school__img {
@@ -53,12 +60,14 @@
   }
 
   .school {
+    -ms-grid-columns: 350px auto 1fr;
     grid-template-columns: 350px auto 1fr;
   }
   .school__img {
     width: 300px;
   }
   .school-grid-span-2 {
+    -ms-grid-column-span: 1;
     grid-column: span 1;
   }
 
