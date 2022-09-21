@@ -65,25 +65,27 @@
 @media (min-width: 1200px){
   .mike__title {
     margin: 0;
-    margin-left: 400px;
+    margin-left: 310px;
     position: relative;
     z-index: 6;
     opacity: 0;
+    transform: translate(45%,0);
     transition: 1s ease-in-out;
   }
   .mike_title--load-in {
-    margin-left: 310px;
+    transform: translate(0,0);
     opacity: 1;
   }
-  .mike_about {
+  .mike__about {
     position: relative;
-    left: -2%;
+    transform: translate(-5%,0);
     opacity: 0;
   }
-  .mike_about-load-in {
-    left: 0%;
+  .mike__about-load-in {
     opacity: 1;
-    transition: 1.7s ease-in-out;
+    transform: translate(0%,0);
+    transition: 1s ease-in-out;
+    transition-delay: .5s;
   }
 
   .about-me__mobile-filler {
@@ -131,12 +133,6 @@
 }
 
 @media (min-width: 1400px) {
-  .mike__title {
-    margin-left: 480px;
-  }
-  .mike_title--load-in {
-    margin-left: 310px;
-  }
   
   .about-me__wrapper .block p {
     margin-left: 345px;
@@ -153,9 +149,6 @@
 
 @media (min-width: 1800px) {
   .mike__title {
-    margin-left: 520px;
-  }
-  .mike_title--load-in {
     margin-left: 320px;
   }
   
@@ -168,7 +161,7 @@
     height: 500px;
   }
   .profile-image__wrapper {
-    min-height: 37vh;
+    min-height: 35vh;
   }
 
 }

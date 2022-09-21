@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  border-top: solid 2px var(--project__button-border-color);
-  border-bottom: solid 2px var(--project__button-border-color);
+  border-top: solid 3px var(--project__button-border-color);
+  border-bottom: solid 3px var(--project__button-border-color);
 }
 .miniNav__buttons-wrapper {
   box-sizing:border-box;
@@ -17,10 +17,11 @@
   background: none;
   border: transparent;
   color: var(--primary-font-color);
-  border-radius: 8px;
   transition: 500ms;
   text-transform: uppercase;
   cursor:pointer;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
 }
 .miniNav__button:focus:not(.focus-visible) {
   outline: none;
@@ -35,4 +36,9 @@
 .miniNav__button:active {
   color: var(--mike-font);
   transition: 0ms;
+}
+.miniNav__button.active_button {
+  border-left: 3px solid var(--mike-font);
+  border-right: 3px solid var(--mike-font);
+  color: var(--nav-active-font-color);
 }

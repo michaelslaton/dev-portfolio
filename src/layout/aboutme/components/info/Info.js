@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "../photoSlider/Slider";
 import schoolList from "../../../../data/schools.js";
 import "./info.css";
+import lightUp from "../../../../utils/lightUp";
 
 export default function Info({ nav }){
 
@@ -25,7 +26,7 @@ export default function Info({ nav }){
                   <span className="school__title">Dates:</span>
                 </div>
                 <div>
-                  <span className="school__info">{school.name}</span>
+                  <span className="school__info">{lightUp(school.name)}</span>
                   <span className="school__info">{school.course}</span>
                   <span className="school__info">{school.dates}</span>
                 </div>

@@ -73,14 +73,15 @@ a.navbar__button:active {
 @media (min-width: 1200px){
   .navbar__wrapper {
     top: 0;
-    right: -60%;
     width: 50%;
+    right: 0;
     border-top: 0;
-    border-bottom: 0 solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
     border-radius: 0 0 0 25px;
+    transform: translateX(100%);
   }
   .navbar__wrapper--load-in {
-    right: 0;
+    transform: translateX(0%);
     transition: 0.5s ease-in-out;
   }
   .navbar__buttons-wrapper li {
@@ -94,11 +95,10 @@ a.navbar__button:active {
   }
 
   .nav-at-top {
-    top: 0;
-    right: 0;
     width: 100%;
     border-bottom: 2px solid var(--bg-color);
     border-radius: 0;
+    transform: translateX(0%);
     transition: 0.5s ease-in-out;
   }
   .nav-buttons-at-top li {
