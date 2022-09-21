@@ -1,5 +1,6 @@
 import resApp from "../assets/imgs/projectImages/restaurantApp.jpg";
 import weLoveMovies from "../assets/imgs/projectImages/weLoveMovies.jpg";
+import devPort from "../assets/imgs/projectImages/devPortfolio.jpg";
 
 const projectList = [
   {
@@ -24,7 +25,7 @@ const projectList = [
   {
     id:3,
     name: "Developer Portfolio",
-    img: weLoveMovies,
+    img: devPort,
     type: "(Front-End)",
     description: "I learned a lot while building this portfolio, and I intend to continue learning as I update it through my career as a software developer. I have designed this portfolio to be easy to customize and add data to as I acquire new skills and create or contribute to new projects.",
     tech: ["Javascript","React.js", "HTML", "Css"],

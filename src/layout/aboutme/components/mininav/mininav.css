@@ -1,13 +1,24 @@
 .miniNav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 .miniNav__buttons-wrapper {
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 .miniNav__button, .miniNav__button:link, .miniNav__button:visited {
@@ -15,6 +26,8 @@
   background: none;
   border: transparent;
   color: var(--primary-font-color);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
   transition: 500ms;
   text-transform: uppercase;
   cursor:pointer;
@@ -26,13 +39,18 @@
 }
 .miniNav__button:hover, .miniNav__button:focus-visible {
   outline-style: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: transparent;
   color: var(--nav-active-font-color);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 .miniNav__button:active {
   color: var(--mike-font);
+  -webkit-transition: 0ms;
+  -o-transition: 0ms;
   transition: 0ms;
 }
 .miniNav__button.active_button {

@@ -3,7 +3,8 @@ p {
 }
 
 .contact__form {
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   background-color: var(--lighter-bg-color);
   padding-bottom: 2%;
   width: 100%;
@@ -28,8 +29,12 @@ p {
 }
 .contact__icon--wrapper {
   width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 40px;
 }
 .contact__icon a{
@@ -37,6 +42,8 @@ p {
 }
 .contact__icon a:hover {
   color: var(--nav-active-font-color);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 .contact__icon a:active {
@@ -50,9 +57,11 @@ a.navbar__button:focus:not(.focus-visible) {
   outline: none;
 }
 .contact__input {
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   outline-style: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: transparent;
   background: var(--nav-button-active-bg);
   border-top: 2px solid var(--project__button-border-color);
@@ -62,16 +71,24 @@ a.navbar__button:focus:not(.focus-visible) {
   margin-bottom: 4%;
   padding: 3%;
   overflow-y: auto;
+  -webkit-transition: 600ms;
+  -o-transition: 600ms;
   transition: 600ms;
 }
 .contact__input:focus-visible, .contact__input:hover, .contact__input:active  {
   border-top: 2px solid var(--mike-font);
   border-bottom: 2px solid var(--mike-font);
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
   transition: 200ms;
 }
 .contact__button--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .contact__form-submit {
   margin-right: 5%;
@@ -100,7 +117,8 @@ a.navbar__button:focus:not(.focus-visible) {
     padding: 1% 2%;
   }
   .contact__form {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 auto;
     width: 97%;
   }
