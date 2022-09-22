@@ -94,6 +94,25 @@ a.navbar__button:focus:not(.focus-visible) {
   margin-right: 5%;
 }
 
+.response__wrapper {
+  height: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.response {
+  font-family: manrope;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.response__sent {
+  color: #00ff00;
+}
+.response__error {
+  color: #ff0000;
+}
+
 @media (min-width: 600px){
   .contact__input {
     padding: 2%;
