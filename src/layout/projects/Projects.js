@@ -15,7 +15,9 @@ export default function Projects() {
               <div className="project">
                 <div className="project__image--wrapper">
                   <div>
-                    <img src={project.img} className="project__image" alt={project.name} />
+                    <a href={project.code} rel="noreferrer" target="_blank">
+                      <img src={project.img} className="project__image" alt={project.name} />
+                    </a>
                   </div>
                 </div>
 

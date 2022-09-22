@@ -26,8 +26,17 @@ p {
   font-style: italic;
 }
 .project__image {
+  cursor:pointer;
   width: 100%;
   border-radius: 7px;
+  scale: 95%;
+  transition: 0.2s ease-in-out;
+  border: solid 2px transparent;
+}
+.project__image:hover {
+  scale: 100%;
+  transition: 0.2s ease-in-out;
+  border: solid 2px var(--mike-font);
 }
 .project__image-wrapper {
   position: relative;
@@ -58,10 +67,8 @@ p {
 }
 
 @media (min-width: 900px) {
-
   .projects__wrapper {
     margin: 0 auto;
-
   }
 
   .project {
