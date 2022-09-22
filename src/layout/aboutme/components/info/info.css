@@ -39,10 +39,14 @@
 .school__img {
   width: 350px;
   scale: 95%;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 .school__img:hover {
   scale: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 .school__title {

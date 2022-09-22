@@ -30,11 +30,15 @@ p {
   width: 100%;
   border-radius: 7px;
   scale: 95%;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   border: solid 2px transparent;
 }
 .project__image:hover {
   scale: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   border: solid 2px var(--mike-font);
 }
