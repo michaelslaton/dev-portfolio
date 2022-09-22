@@ -27,10 +27,10 @@ export default function AboutMe() {
           <h1 className={`title mike__title ${titleVisible ? "mike_title--load-in" : ""}`} ref={titleRef}>
             Hey, I'm {lightUp("Mike","mike__letter")}.
           </h1>
-          <p className={`mike__about ${titleVisible ? "mike__about-load-in" : ""}`}>
+          <article className={`mike__about ${titleVisible ? "mike__about-load-in" : ""}`}>
             I am a {lightUp("full-stack developer")}, with a passion for {lightUp("front-end")}, currently living in Emeryville, California.
             I love working with the design and aesthetic elements of an App and seeing a project as all of the pieces come together.
-          </p>
+          </article>
         </div>
         <MiniNav setNav={setNav} nav={nav}/>
         <Info nav={nav}/>

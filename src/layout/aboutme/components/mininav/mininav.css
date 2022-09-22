@@ -32,7 +32,7 @@
   -o-transition: 500ms;
   transition: 500ms;
   text-transform: uppercase;
-  cursor:pointer;
+  cursor: pointer;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
