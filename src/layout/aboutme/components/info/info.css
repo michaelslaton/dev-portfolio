@@ -38,6 +38,12 @@
 }
 .school__img {
   width: 350px;
+  scale: 95%;
+  transition: 0.2s ease-in-out;
+}
+.school__img:hover {
+  scale: 100%;
+  transition: 0.2s ease-in-out;
 }
 .school__title {
   color: var(--title-color);

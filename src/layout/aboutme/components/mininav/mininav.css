@@ -12,17 +12,19 @@
           box-sizing:border-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
   width: 100%;
 }
 .miniNav__button, .miniNav__button:link, .miniNav__button:visited {
   margin: 0 5%;
+  padding: .4rem .7rem;
+  letter-spacing: .2rem;
   background: none;
   border: transparent;
   color: var(--primary-font-color);
@@ -31,8 +33,8 @@
   transition: 500ms;
   text-transform: uppercase;
   cursor:pointer;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
 }
 .miniNav__button:focus:not(.focus-visible) {
   outline: none;
@@ -41,7 +43,7 @@
   outline-style: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: transparent;
+  border-color: var(--nav-button-active-bg);
   color: var(--nav-active-font-color);
   -webkit-transition: 300ms;
   -o-transition: 300ms;
@@ -54,7 +56,7 @@
   transition: 0ms;
 }
 .miniNav__button.active_button {
-  border-left: 3px solid var(--mike-font);
-  border-right: 3px solid var(--mike-font);
+  border-left: 5px solid var(--mike-font);
+  border-right: 5px solid var(--mike-font);
   color: var(--nav-active-font-color);
 }
