@@ -19,7 +19,7 @@
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   margin: 2% auto 0;
-  width: 75%;
+  width: 85%;
 }
 .school-grid-span-2 {
   -ms-grid-column-span: 2;
