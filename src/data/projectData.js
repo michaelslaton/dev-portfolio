@@ -27,7 +27,7 @@ const projectList = [
     name: "Developer Portfolio",
     img: devPort,
     type: "(Front-End)",
-    description: "I learned a lot while building this portfolio, and I intend to continue learning as I update it through my career as a software developer. I have designed this portfolio to be easy to customize and add data to as I acquire new skills and create or contribute to new projects.",
+    description: "I learned a lot while building this portfolio, and I intend to continue learning as I update it throughout my career as a software developer. I have designed this portfolio to be easy to customize and add data to as I acquire new skills and create or contribute to new projects.",
     tech: ["Javascript","React.js", "HTML", "Css"],
     code: "https://github.com/michaelslaton/dev-portfolio",
   },

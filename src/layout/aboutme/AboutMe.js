@@ -28,8 +28,8 @@ export default function AboutMe() {
             Hey, I'm {lightUp("Mike","mike__letter")}.
           </h1>
           <article className={`mike__about ${titleVisible ? "mike__about-load-in" : ""}`}>
-            I am a {lightUp("full-stack developer")}, with a passion for {lightUp("front-end")}, currently living in Emeryville, California.
-            I love working with the design and aesthetic elements of an App and seeing a project as all of the pieces come together.
+            I am a {lightUp("full-stack developer")}, with a passion for {lightUp("front-end")}, currently residing in {lightUp("Emeryville, California")}.
+            When it comes to Apps, I love working with the design and aesthetic elements, and enjoy seeing all of the pieces come together on my projects.
           </article>
         </div>
         <MiniNav setNav={setNav} nav={nav}/>
