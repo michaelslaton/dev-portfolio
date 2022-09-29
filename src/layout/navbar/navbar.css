@@ -53,11 +53,9 @@ a.navbar__button:focus:not(.focus-visible) {
   outline: none;
 }
 a.navbar__button:hover, a.navbar__button:focus-visible {
-  padding: 10px;
   outline-style: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: transparent;
   border: 2px solid var(--mike-font);
   background-color: var(--nav-button-active-bg);
   color: var(--nav-active-font-color);
