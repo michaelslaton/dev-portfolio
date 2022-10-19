@@ -9,7 +9,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 0%;
-  height: 9%;
+  height: 3.5rem;
   width: 100%;
   z-index: 9999;
   font-family: manrope;
@@ -72,9 +72,6 @@ a.navbar__button:active {
 }
 
 @media (min-width: 600px){
-  .navbar__wrapper {
-    height: 7%;
-  }
   .navbar__buttons-wrapper li {
     font-size: 130%;
     margin: 0 3%;
@@ -140,12 +137,6 @@ a.navbar__button:active {
   
 }
 
-@media (min-width: 1400px) {
-  .navbar__wrapper {
-    height: 6.5%;
-  }
-}
-
 @media (min-width: 1800px) {
   a.navbar__button, a.navbar__button:link, a.navbar__button:active, a.navbar__button, a.navbar__button:visited {
     font-size: 1.5rem;
@@ -168,6 +159,7 @@ a.navbar__button:active {
 @media (min-width: 1900px) {
   .navbar__wrapper {
     width: 57%;
+    height: 4.5rem;
   }
   .nav-at-top {
     width: 100%;

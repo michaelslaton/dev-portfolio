@@ -4,7 +4,7 @@ import css from "../assets/imgs/skillsIcons/css.png";
 import express from "../assets/imgs/skillsIcons/express.png";
 import git from "../assets/imgs/skillsIcons/git.png";
 import github from "../assets/imgs/skillsIcons/github.png";
-import heroku from "../assets/imgs/skillsIcons/adobe.png";
+import heroku from "../assets/imgs/skillsIcons/heroku.png";
 import html from "../assets/imgs/skillsIcons/html.png";
 import javascript from "../assets/imgs/skillsIcons/javascript.png";
 import knex from "../assets/imgs/skillsIcons/knex.png";
