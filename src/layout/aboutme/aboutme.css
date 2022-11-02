@@ -127,7 +127,7 @@
     padding: 0;
   }
   .about-me__wrapper .block {
-    padding: 2%;
+    padding: .9em;
   }
   
   .active-screen.info-wrapper__padding {
@@ -147,13 +147,13 @@
     height: 400px;
   }
   .profile-image__wrapper {
-    min-height: 25vh;
+    min-height: 12.8em;
     width: 100%;
     position: relative;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 1%;
+    padding: 1rem;
   }
 }
 
@@ -168,7 +168,7 @@
     height: 450px;
   }
   .profile-image__wrapper {
-    min-height: 33vh;
+    min-height: 17.5em;
   }
 }
 
@@ -186,13 +186,13 @@
     height: 500px;
   }
   .profile-image__wrapper {
-    min-height: 35vh;
+    min-height: 22.2em;
   }
 
 }
 
 @media (min-width: 1900px) {
-  .profile-image__wrapper {
-    min-height: 37vh;
-  }
+  /* .profile-image__wrapper {
+    min-height: 22.2em;
+  } */
 }
