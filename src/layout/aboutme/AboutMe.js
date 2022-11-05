@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import "./aboutme.css";
 import mike from "../../assets/imgs/mike.jpg";
 import MiniNav from "./components/mininav/MiniNav";
 import Info from "./components/info/Info";
 import lightUp from "../../utils/lightUp";
+import "./aboutme.css";
 
 export default function AboutMe() {
   const [nav,setNav] = useState("edu");

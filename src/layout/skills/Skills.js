@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import "./skills.css";
 import skills from "../../data/skills";
+import "./skills.css";
 
 export default function Skills(){
   const [skillVisible, setSkillVisible] = useState(false);

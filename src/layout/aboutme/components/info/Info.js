@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "../photoSlider/Slider";
 import schoolList from "../../../../data/schools.js";
-import "./info.css";
 import lightUp from "../../../../utils/lightUp";
+import "./info.css";
 
 export default function Info({ nav }){
 

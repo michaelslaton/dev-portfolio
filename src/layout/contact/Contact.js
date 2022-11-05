@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import "./contact.css";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "./contact.css";
 
 export default function Contact(){
   const form = useRef();
