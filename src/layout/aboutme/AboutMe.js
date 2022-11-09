@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import mike from "../../assets/imgs/mike.jpg";
 import MiniNav from "./components/mininav/MiniNav";

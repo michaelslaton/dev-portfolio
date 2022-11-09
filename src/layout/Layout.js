@@ -1,5 +1,4 @@
 import "./Layout.css";
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import Navbar from "./navbar/Navbar";
 import AboutMe from "./aboutme/AboutMe";
