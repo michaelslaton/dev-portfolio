@@ -1,6 +1,6 @@
+import devPort from "../assets/imgs/projectImages/devPortfolio.jpg";
 import resApp from "../assets/imgs/projectImages/restaurantApp.jpg";
 import weLoveMovies from "../assets/imgs/projectImages/weLoveMovies.jpg";
-import devPort from "../assets/imgs/projectImages/devPortfolio.jpg";
 
 const projectList = [
   {

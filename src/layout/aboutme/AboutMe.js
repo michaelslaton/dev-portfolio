@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import mike from "../../assets/imgs/mike.jpg";
-import MiniNav from "./components/mininav/MiniNav";
 import Info from "./components/info/Info";
 import lightUp from "../../utils/lightUp";
+import mike from "../../assets/imgs/mike.jpg";
+import MiniNav from "./components/mininav/MiniNav";
 import "./aboutme.css";
 
 export default function AboutMe() {

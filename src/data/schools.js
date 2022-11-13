@@ -1,5 +1,5 @@
-import thinkfulimg from "../assets/imgs/schools/thinkful.png";
 import sfccimg from "../assets/imgs/schools/sfcc.png";
+import thinkfulimg from "../assets/imgs/schools/thinkful.png";
 
 const schoolList = [
   {

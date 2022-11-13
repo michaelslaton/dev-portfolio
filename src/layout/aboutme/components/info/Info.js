@@ -1,6 +1,6 @@
-import Slider from "../photoSlider/Slider";
-import schoolList from "../../../../data/schools.js";
 import lightUp from "../../../../utils/lightUp";
+import schoolList from "../../../../data/schools.js";
+import Slider from "../photoSlider/Slider";
 import "./info.css";
 
 export default function Info({ nav }){

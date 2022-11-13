@@ -1,6 +1,6 @@
-import {useState} from "react";
-import sliderData from "../../../../data/sliderData";
+import { useState } from "react";
 import SliderBtn from "./SliderBtn";
+import sliderData from "../../../../data/sliderData";
 import "./Slider.css";
 
 export default function Slider(){
