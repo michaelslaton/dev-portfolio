@@ -126,9 +126,6 @@
     z-index: 6;
     padding: 0;
   }
-  .about-me__wrapper .block {
-    padding: .9em;
-  }
   
   .active-screen.info-wrapper__padding {
     padding: 2% 3.5%;
