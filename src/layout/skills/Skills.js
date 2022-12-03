@@ -13,9 +13,6 @@ export default function Skills(){
     <div className="skills__wrapper block block__width">
         <div>
           <h1 className="title">Skills</h1>
-          {/* <p>
-            Listed below are my current skills, though if I don't know it, I love and am more than happy to learn new technology!
-          </p> */}
         </div>
 
         <div className="skills-list" ref={skillRef}>
