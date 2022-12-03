@@ -10,8 +10,9 @@ const projectList = [
     type: "(Full-Stack)",
     description: "A retro styled, full-stack web application that allows a restaurant to create, search, and edit reservations as well as manage seating inside the restaurant as their guests arrive.",
     tech: ["Javascript","React.js","HTML","Css","Knex.js","Express.js"],
-    demo: "https://ms-finalcap-frontend.herokuapp.com/dashboard",
-    code: "https://github.com/michaelslaton/ms-restaurant-reservations",
+    demo: "https://ms-restaurant-reservations-front.vercel.app/dashboard",
+    code: "https://github.com/michaelslaton/ms-restaurant-reservations-front",
+    code2: "https://github.com/michaelslaton/ms-restaurant-reservations-back",
   },
   {
     id:2,

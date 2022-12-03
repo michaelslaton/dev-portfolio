@@ -7,6 +7,9 @@ export default function Projects() {
       <div>
         <h1 className="title">Projects</h1>
       </div>
+      <div className="warning">
+        <span className="warning__note">Note:</span> Some apps may not be working properly as I find them homes alternative to Heroku.
+      </div>
       <div>
         {projectList.map((project,i) => {
           return (
@@ -39,9 +42,12 @@ export default function Projects() {
                   </div>
 
                   <div className="project__buttons-container">
-                    <a href={project.code} className="button project__button" rel="noreferrer" target="_blank">Code</a>
                     {project.demo && (
-                      <a href={project.demo} className="button project__button" rel="noreferrer" target="_blank">Demo</a>
+                      <a href={project.demo} type="button" className="button project__button" rel="noreferrer" target="_blank">Demo</a>
+                    )}
+                    <a href={project.code} type="button" className="button project__button" rel="noreferrer" target="_blank">{ project.code2 ? "Code: F" : "Code"}</a>
+                    {project.code2 && (
+                      <a href={project.code2} type="button" className="button project__button" rel="noreferrer" target="_blank">Code: B</a>
                     )}
                   </div>
                 </div>

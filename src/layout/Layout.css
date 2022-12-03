@@ -117,12 +117,10 @@ p {
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
   font-family: manrope;
-  font-size: 120%;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid var(--project__button-border-color);
   border-radius: 4px;
-  padding: 5px 10%;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
