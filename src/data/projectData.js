@@ -12,7 +12,7 @@ const projectList = [
     tech: ["Javascript","React.js","HTML","Css","Knex.js","Express.js"],
     demo: "https://ms-restaurant-reservations-front.vercel.app/dashboard",
     code: "https://github.com/michaelslaton/ms-restaurant-reservations-front",
-    code2: "https://github.com/michaelslaton/ms-restaurant-reservations-back",
+    codeb: "https://github.com/michaelslaton/ms-restaurant-reservations-back",
   },
   {
     id:2,
