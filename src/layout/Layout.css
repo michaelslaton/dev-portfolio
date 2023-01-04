@@ -55,24 +55,6 @@ abbr[title] {
   text-decoration: none;
 }
 
-.light-up {
-  display: inline-block;
-  color: var(--primary-font-color);
-  -webkit-transition: color 1.7s;
-  -o-transition: color 1.7s;
-  transition: color 1.7s;
-  -webkit-transition-delay: 1s;
-       -o-transition-delay: 1s;
-          transition-delay: 1s;
-}
-.light-up:hover {
-  color: var(--nav-active-font-color);
-  font-weight: bolder;
-  -webkit-transition: color 1ms;
-  -o-transition: color 1ms;
-  transition: color 1ms;
-}
-
 div, img{
   z-index: 5;
 }

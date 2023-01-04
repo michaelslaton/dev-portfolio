@@ -1,4 +1,4 @@
-import lightUp from "../../../../utils/lightUp";
+import lightUp from "../../../../utils/lightUp/lightUp";
 import schoolList from "../../../../data/schools.js";
 import Slider from "../photoSlider/Slider";
 import "./info.css";

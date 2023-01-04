@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import lightUp from "../../utils/lightUp/lightUp";
 import skills from "../../data/skills";
 import "./skills.css";
 
@@ -21,9 +22,9 @@ export default function Skills(){
               <div className={`skill-card ${skillVisible ? "skill-load-in" : ""}`} key={i}>
                 <div><img className="skill-card__image" src={skill.img} alt={skill.name}/></div>
                 {
-                  skill.abbr ? <div><abbr title={skill.abbr}>{`${skill.name}`}</abbr></div>
+                  skill.abbr ? <div><abbr title={skill.abbr}>{lightUp(skill.name)}</abbr></div>
                   : 
-                  <div>{`${skill.name}`}</div>
+                  <div>{lightUp(skill.name)}</div>
                 }
                 
               </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Info from "./components/info/Info";
-import lightUp from "../../utils/lightUp";
+import lightUp from "../../utils/lightUp/lightUp";
 import mike from "../../assets/imgs/mike.jpg";
 import MiniNav from "./components/mininav/MiniNav";
 import "./aboutme.css";
@@ -25,7 +25,7 @@ export default function AboutMe() {
         </div>
         <div className="block top-corner">
           <h1 className={`title mike__title ${titleVisible ? "mike_title--load-in" : ""}`} ref={titleRef}>
-            Hey, I'm {lightUp("Mike","mike__letter")}.
+            Hey, I'm {lightUp("Mike","mike__letter", true)}.
           </h1>
           <article className={`mike__about ${titleVisible ? "mike__about-load-in" : ""}`}>
             I am a {lightUp("full-stack developer")}, with a passion for {lightUp("front-end")}, currently residing in {lightUp("Emeryville, California")}.
