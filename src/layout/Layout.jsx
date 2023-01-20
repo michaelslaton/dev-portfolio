@@ -16,7 +16,6 @@ export default function Layout(){
       <Navbar shift={visible}/>
 
       <div className="top-sensor" ref={navRef}/>
-
       <section id="about"><AboutMe/></section>
 
       <div id="skills" className="anchor"/>
