@@ -7,9 +7,9 @@ export default function Projects() {
       <div>
         <h1 className="title">Projects</h1>
       </div>
-      <div className="warning">
+      {/* <div className="warning">
         <span className="warning__note">Note:</span> Some apps may not be working properly as I find them homes alternative to Heroku.
-      </div>
+      </div> */}
       <div>
         {projectList.map((project,i) => {
           return (
