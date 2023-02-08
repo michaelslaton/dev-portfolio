@@ -14,4 +14,4 @@ export default function lightUp(str, clss = "light-up", split = false) {
   } else {
     return <div className={clss}>{str}</div>;
   }
-}
+};
