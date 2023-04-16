@@ -1,93 +1,51 @@
-p {
-  font-family: manrope;
-}
-
-.skills__wrapper {
-  margin: 0;
-}
-.skills-list {
-  display: -ms-grid;
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin: 4% auto;
+  width: 100%;
+  grid-template-columns: repeat(3,auto);
+  gap: 1em;
 }
 .skill-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 10% auto 15%;
+  flex-direction: column;
   text-align: center;
   color: var(--title-color);
   font-family: manrope;
-  font-style: bold;
-  font-size: 90%;
+  font-size: 1em;
 }
 .skill-card__image {
   width: 50px;
 }
 
-@media (min-width: 1200px){
+/* 360 */
+
+@media (min-width: 768px){
+  .skills-grid {
+    grid-template-columns: repeat(4,auto);
+    gap: 1em;
+  }
+}
+
+@media (min-width: 1366px){
+  .skills-grid {
+    grid-template-columns: repeat(8, 1fr);
+    margin: 1.2em auto;
+  }
+}
+
+@media (min-width: 1920px){
   .skill-card {
     position: relative;
-    -webkit-transform: translate(0,60%);
-        -ms-transform: translate(0,60%);
-            transform: translate(0,60%);
+    transform: translate(0,60%);
     opacity: 0;
-    -webkit-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
-    -webkit-transition-delay: .1s;
-         -o-transition-delay: .1s;
-            transition-delay: .1s;
+    transition-delay: .1s;
+    font-size: 1.1em;
   }
   .skill-load-in {
-    -webkit-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-            transform: translate(0,0);
+    transform: translate(0,0);
     opacity: 1;
   }
-
-  .skills__wrapper {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .skills__wrapper.block {
-    padding: 2%;
-  }
-  .skills-list {
-    grid-template-columns: repeat(4, 1fr);
-    border-radius: 20px;
-    margin: 2% auto;
-    width: 90%;
-  }
-  .skill-card {
-      margin: 4% auto;
-      font-size: 18px;
-    }
   .skill-card__image {
-    width: 60px;
+    width: 4em;
   }
-  
-}
-
-@media (min-width: 1400px) {
-  .skills-list {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .skill-card {
-      margin: 15px auto;
-    }
-}
-
-@media (min-width: 1800px) {
-  .skills-list {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .skill-card {
-      margin: 15px auto;
-    }
 }

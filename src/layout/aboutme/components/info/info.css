@@ -1,90 +1,70 @@
 .info-wrapper {
-  position: relative;
-  overflow: visible;
-  min-height: 325px;
-  z-index: 90;
-  background-color: var(--lighter-bg-color);
-}
-.info-wrapper__padding {
-  padding: 2%;
-}
-.info-wrapper.block {
-  padding-left: 0;
-  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .school {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr;
-  grid-template-columns: auto 1fr;
-  margin: 2% auto 0;
-  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto;
 }
-.school-grid-span-2 {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-}
-.school__wrapper {
+.school__img-container {
+  display: flex;
   width: 100%;
 }
-.center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
 .school__img {
-  width: 350px;
-  scale: 95%;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
+  max-width: 17.5em;
+  max-height: 4.5em;
+  scale: .95;
   transition: 0.2s ease-in-out;
 }
 .school__img:hover {
-  scale: 100%;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
+  scale: 1;
   transition: 0.2s ease-in-out;
 }
-.school__title {
+
+.school__info-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  font-size: 1.1em;
+}
+.school__info--title {
   color: var(--title-color);
   font-family: manrope-bold;
-  font-size: 110%;
-  display: block;
-  margin: 5px 0;
 }
 .school__info {
-  display: block;
   font-family: manrope;
-  font-size: 110%;
-  margin: 5px 15px;
+  margin-left: .5em;
 }
 
-@media (min-width: 900px) {
+.active-screen{
+  opacity: 1;
+  transition: opacity ease-in-out 0.2s;
+}
+.inactive-screen{
+  opacity: 0;
+  display: none;
+  transition: opacity ease-in-out 0.2s;
+}
 
-  .info-wrapper.block {
-    padding: 0;
-  }
+/* 360 */
 
+@media (min-width: 768px){
   .school {
-    -ms-grid-columns: 350px auto 1fr;
-    grid-template-columns: 350px auto 1fr;
+    display: grid;
+    grid-template-columns: 12em 1fr;
+    margin: .6em auto 1em;
+    gap: 1em;
+  }
+  .school__img-container {
+    justify-content: center;
   }
   .school__img {
-    width: 300px;
+    max-width: 100%;
+    max-height: 5.5em;
   }
-  .school-grid-span-2 {
-    -ms-grid-column-span: 1;
-    grid-column: span 1;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  .info-wrapper.block {
-    padding: 0;
+  .school__info-grid {
+    font-size: 1em;
   }
 }

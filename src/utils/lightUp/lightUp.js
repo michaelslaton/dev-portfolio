@@ -1,9 +1,9 @@
-import "./lightUp.css";
+import './lightUp.css';
 
-export default function lightUp(str, clss = "light-up", split = false) {
+export default function lightUp(str, clss = 'light-up', split = false) {
   if (split) {
-    return str.split("").map((letter, i) => {
-      if (letter === " ") return " ";
+    return str.split('').map((letter, i) => {
+      if (letter === ' ') return ' ';
       else
         return (
           <div key={i} className={clss}>
