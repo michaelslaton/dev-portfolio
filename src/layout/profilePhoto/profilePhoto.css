@@ -42,7 +42,7 @@
     width: 17.2em;
     position: absolute;
     left: auto;
-    right: 0;
+    right: 1.3em;
     z-index: 1;
   }
 
@@ -54,10 +54,14 @@
 
 @media (min-width: 1024px){
   .profile-photo__block {
-    height: 20em;
+    height: 17.5em;
   }
   .profile-image {
     width: 23.2em;
+    right: 2.5em;
+  }
+  .mobile-background {
+    height: 32%;
   }
 }
 

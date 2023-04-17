@@ -37,6 +37,9 @@
 
 html, body {
   background-color: var(--bg-color);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(14, 0, 29) 74%, #380069b3 100%);
+  background-attachment: fixed;
   color: var(--primary-font-color);
   scroll-behavior: smooth;
   z-index: 1;
