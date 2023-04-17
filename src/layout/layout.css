@@ -164,9 +164,6 @@ abbr[title] {
 
 @media (min-width: 1920px){
   .block {
-    padding: .7em 1.5em;
-    border-radius: 4px;
     width: 60%;
-    margin-bottom: 1em;
   }
 }
