@@ -38,6 +38,8 @@
 html, body {
   background-color: var(--bg-color);
   background-color: rgb(0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(74%, rgb(14, 0, 29)), to(#380069b3));
+  background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(14, 0, 29) 74%, #380069b3 100%);
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(14, 0, 29) 74%, #380069b3 100%);
   background-attachment: fixed;
   color: var(--primary-font-color);
@@ -57,15 +59,24 @@ p {
 }
 
 .main-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .block {
   background-color: var(--lighter-bg-color);
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   width: 100%;
   padding: 0 .65em;
   padding-bottom: .9em;

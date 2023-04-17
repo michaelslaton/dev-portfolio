@@ -31,6 +31,8 @@ label {
 }
 .contact__icon:hover {
   color: var(--nav-active-font-color);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 .contact__icon:active {
@@ -43,28 +45,39 @@ label {
 
 .contact__input {
   background: var(--nav-button-active-bg);
-  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   margin-bottom: 1em;
   padding: 0.4em .5em;
   width: 100%;
   outline-style: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: transparent;
   border-top: 2px solid var(--project__button-border-color);
   border-bottom: 2px solid var(--project__button-border-color);
   color: var(--primary-font-color);
+  -webkit-transition: 600ms;
+  -o-transition: 600ms;
   transition: 600ms;
   overflow-y: auto;
 }
 .contact__input:is(:focus-visible, :hover, :active){
   border-top: 2px solid var(--mike-font);
   border-bottom: 2px solid var(--mike-font);
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
   transition: 200ms;
 }
 .contact__submit-wrapper {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   margin: 0 auto;
 }
@@ -108,9 +121,16 @@ label {
   .contact__submit-wrapper {
     width: 100%;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .contact__form-submit {
     margin-right: 0;
@@ -120,7 +140,7 @@ label {
     border-radius: 4px;
     border: 2px solid var(--project__button-border-color);
     margin-bottom: 1em;
-    padding: 2em;
+    padding: .5em;
   }
   label {
     margin: 0;

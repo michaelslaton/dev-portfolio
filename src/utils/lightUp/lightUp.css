@@ -2,11 +2,17 @@
   display: inline-block;
   color: var(--primary-font-color);
   border-bottom: solid 1px transparent;
+  -webkit-transition: 1.7s;
+  -o-transition: 1.7s;
   transition: 1.7s;
-  transition-delay: .5s;
+  -webkit-transition-delay: .5s;
+       -o-transition-delay: .5s;
+          transition-delay: .5s;
 }
 .light-up:hover {
   color: var(--nav-active-font-color);
   border-bottom: solid 1px var(--nav-active-font-color);
+  -webkit-transition: 100ms ease-in;
+  -o-transition: 100ms ease-in;
   transition: 100ms ease-in;
 }

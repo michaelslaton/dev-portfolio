@@ -1,12 +1,19 @@
 .skills-grid {
+  display: -ms-grid;
   display: grid;
   width: 100%;
+  -ms-grid-columns: auto 1em auto 1em auto;
   grid-template-columns: repeat(3,auto);
   gap: 1em;
 }
 .skill-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   color: var(--title-color);
   font-family: manrope;
@@ -20,6 +27,7 @@
 
 @media (min-width: 768px){
   .skills-grid {
+    -ms-grid-columns: auto 1em auto 1em auto 1em auto;
     grid-template-columns: repeat(4,auto);
     gap: 1em;
   }
@@ -35,14 +43,22 @@
 @media (min-width: 1920px){
   .skill-card {
     position: relative;
-    transform: translate(0,60%);
+    -webkit-transform: translate(0,60%);
+        -ms-transform: translate(0,60%);
+            transform: translate(0,60%);
     opacity: 0;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
-    transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+         -o-transition-delay: .1s;
+            transition-delay: .1s;
     font-size: 1.1em;
   }
   .skill-load-in {
-    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+            transform: translate(0,0);
     opacity: 1;
   }
   .skill-card__image {

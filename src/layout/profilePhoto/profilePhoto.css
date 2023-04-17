@@ -1,7 +1,11 @@
 .profile-photo__block {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profile-image__wrapper {
@@ -10,7 +14,8 @@
 }
 
 .profile-image {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   margin-top: 0;
   border: solid 8px var(--lighter-bg-color);
@@ -35,8 +40,12 @@
   .profile-photo__block {
     height: 11.5em;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .profile-image {
     width: 17.2em;
