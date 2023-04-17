@@ -33,7 +33,7 @@
 
 @media (min-width: 768px){
   .profile-photo__block {
-    height: 14em;
+    height: 11.5em;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
   }
 
   .mobile-background {
-    height: 39%;
+    height: 22%;
     width: 100%;
   }
 }
@@ -63,7 +63,7 @@
 
 @media (min-width: 1366px){
   .profile-photo__block {
-    height: 18em;
+    height: 16.5em;
   }
   
   .profile-image__wrapper {

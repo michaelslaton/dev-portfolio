@@ -1,4 +1,5 @@
 import { useInView } from 'react-intersection-observer';
+import './layout.css';
 import Navbar from './navbar/Navbar';
 import ProfilePhoto from './profilePhoto/ProfilePhoto';
 import AboutMe from './aboutme/AboutMe';
@@ -6,7 +7,6 @@ import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
-import './layout2.css';
 
 export default function Layout(){
   const { ref: navRef, inView: visible } = useInView();
@@ -17,16 +17,16 @@ export default function Layout(){
 
       <div className='top-anchor' ref={navRef}/>
       <ProfilePhoto/>
-      <section id='about'><AboutMe/></section>
+      <AboutMe/>
 
       <div id='skills' className='anchor'/>
-      <section><Skills/></section>
+      <Skills/>
       
       <div id='projects' className='anchor'/>
-      <section><Projects/></section>
+      <Projects/>
 
       <div id='contact' className='anchor'/>
-      <section><Contact/></section>
+      <Contact/>
 
       <Footer/>
     </div>

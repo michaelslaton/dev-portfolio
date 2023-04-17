@@ -75,8 +75,6 @@ abbr[title] {
 
 .title {
   color: var(--title-color);
-  margin: 0;
-  margin-bottom: .5em;
   font-family: manrope-bold;
 }
 
