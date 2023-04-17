@@ -1,4 +1,3 @@
-import './layout.css';
 import { useInView } from 'react-intersection-observer';
 import Navbar from './navbar/Navbar';
 import ProfilePhoto from './profilePhoto/ProfilePhoto';
@@ -7,6 +6,7 @@ import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
+import './layout.css';
 
 export default function Layout(){
   const { ref: navRef, inView: visible } = useInView();
