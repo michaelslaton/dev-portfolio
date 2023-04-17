@@ -72,14 +72,8 @@ a.project__button:is(:link, :visited) {
   }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1366px){
   .project__image {
     scale: .97;
-  }
-  .project__title {
-    color: var(--title-color);
-    margin: 0;
-    font-family: manrope-bold;
-    margin-top: 1em;
   }
 }
