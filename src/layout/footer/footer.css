@@ -1,13 +1,13 @@
 .footer__wrapper {
-  margin-bottom: 10vh;
+  margin-bottom: 16em;
   width: 100%;
   text-align: end;
 }
 .footer__copyright {
   font-family: manrope-bold;
   font-style: italic;
-  font-size: 0.8rem;
-  margin-right: 1%;
+  font-size: 0.8em;
+  margin-right: 3em;
   opacity: .3;
 }
 
@@ -20,8 +20,8 @@
   }
   .footer__copyright {
     font-style: italic;
-    font-size: 0.8rem;
-    margin-right: 5%;
+    font-size: 0.8em;
+    margin-right: 3em;
     opacity: .3;
   }
 }

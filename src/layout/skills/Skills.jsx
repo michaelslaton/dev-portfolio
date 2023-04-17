@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { useInView } from "react-intersection-observer";
-import lightUp from "../../utils/lightUp/lightUp";
-import skills from "../../data/skills";
-import "./skills.css";
+import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import lightUp from '../../utils/lightUp/lightUp';
+import skills from '../../data/skills';
+import './skills.css';
 
 export default function Skills(){
   const [skillVisible, setSkillVisible] = useState(false);
@@ -11,16 +11,16 @@ export default function Skills(){
   if(visible && skillVisible !== true) setSkillVisible(true);
 
   return (
-    <div className="skills__wrapper block block__width">
+    <div className='block'>
         <div>
-          <h1 className="title">Skills</h1>
+          <h1 className='title'>Skills</h1>
         </div>
 
-        <div className="skills-list" ref={skillRef}>
+        <div className='skills-grid' ref={skillRef}>
           {skills.map((skill, i) => {
             return (
-              <div className={`skill-card ${skillVisible ? "skill-load-in" : ""}`} key={i}>
-                <div><img className="skill-card__image" src={skill.img} alt={skill.name}/></div>
+              <div className={`skill-card ${skillVisible ? 'skill-load-in' : ''}`} key={i}>
+                <div><img className='skill-card__image' src={skill.img} alt={skill.name}/></div>
                 {
                   skill.abbr ? <div><abbr title={skill.abbr}>{lightUp(skill.name)}</abbr></div>
                   : 

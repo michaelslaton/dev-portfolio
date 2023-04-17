@@ -1,8 +1,8 @@
-import img1 from "../assets/imgs/sliderphotos/photoImg1.jpg";
-import img2 from "../assets/imgs/sliderphotos/photoImg2.jpg";
-import img3 from "../assets/imgs/sliderphotos/photoImg3.jpg";
-import img4 from "../assets/imgs/sliderphotos/photoImg4.jpg";
-import img5 from "../assets/imgs/sliderphotos/photoImg5.jpg";
+import img1 from '../assets/imgs/sliderphotos/photoImg1.jpg';
+import img2 from '../assets/imgs/sliderphotos/photoImg2.jpg';
+import img3 from '../assets/imgs/sliderphotos/photoImg3.jpg';
+import img4 from '../assets/imgs/sliderphotos/photoImg4.jpg';
+import img5 from '../assets/imgs/sliderphotos/photoImg5.jpg';
 
 const sliderData = [
   {
