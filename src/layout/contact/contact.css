@@ -23,7 +23,6 @@ label {
   width: 100%;
   text-align: end;
 }
-
 .contact__icon {
   font-size: 2em;
   margin-right: .5em; 
@@ -69,6 +68,7 @@ label {
   -o-transition: 200ms;
   transition: 200ms;
 }
+
 .contact__submit-wrapper {
   width: 90%;
   display: -webkit-box;
@@ -118,6 +118,7 @@ label {
     margin: 0 auto;
     margin-bottom: 5px;
   }
+
   .contact__submit-wrapper {
     width: 100%;
     margin: 0;
@@ -136,16 +137,18 @@ label {
     margin-right: 0;
     padding: .4em 6em;
   }
+  
+  label {
+    margin: 0;
+    margin-bottom: .3em;
+    padding: 0;
+  }
+  
   .contact__input {
     border-radius: 4px;
     border: 2px solid var(--project__button-border-color);
     margin-bottom: 1em;
     padding: .5em;
-  }
-  label {
-    margin: 0;
-    margin-bottom: .3em;
-    padding: 0;
   }
   .contact__input:is(:focus-visible, :hover, :active) {
     border: 2px solid var(--mike-font);

@@ -100,7 +100,7 @@ abbr[title] {
 }
 
 .button { 
-  background-color: var(--lighter-bg-color);
+  background-color: transparent;
   color: var(--primary-font-color);
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
@@ -116,7 +116,7 @@ abbr[title] {
 .button:focus:not(.focus-visible) {
   outline: none;
 }
-.button:hover, .button:focus-visible {
+.button:is(:hover, :focus-visible) {
   background-color: var(--nav-button-active-bg);
   outline-style: none;
   -webkit-box-shadow: none;

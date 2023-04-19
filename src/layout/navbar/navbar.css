@@ -35,37 +35,15 @@
 }
 .navbar__button,
 .navbar__button:is(:link, :visited) {
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-  text-decoration: none;
-  color: var(--primary-font-color);
-  border: 2px solid var(--lighter-bg-color);
-  background-color: var(--lighter-bg-color);
+  border: 2px solid transparent;
   padding: .7em .2em;
-  border-radius: 8px;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
   font-size: 1.2em;
 }
-.navbar__button:hover,
-.navbar__button:focus-visible {
-  background-color: var(--nav-button-active-bg);
-  outline-style: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.navbar__button:hover {
   border: 2px solid var(--mike-font);
-  color: var(--nav-active-font-color);
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
-}
-.navbar__button:active {
-  border: 2px solid var(--nav-button-active-border-color);
-  color: var(--mike-font);
-  -webkit-transition: 0ms;
-  -o-transition: 0ms;
-  transition: 0ms;
 }
 .navbar__button:focus:not(.focus-visible) {
   outline: none;

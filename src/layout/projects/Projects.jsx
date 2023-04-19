@@ -40,9 +40,23 @@ export default function Projects() {
                     {project.demo && (
                       <a href={project.demo} type='button' className='button project__button' rel='noreferrer' target='_blank'>Demo</a>
                     )}
-                    <a href={project.code} type='button' className='button project__button' rel='noreferrer' target='_blank'>{ project.codeb ? 'Code: F' : 'Code'}</a>
+                    <a
+                      href={project.code}
+                      type='button'
+                      className='button project__button'
+                      rel='noreferrer'
+                      target='_blank'>
+                        { project.codeb ? 'Code: F' : 'Code'}
+                    </a>
                     {project.codeb && (
-                      <a href={project.codeb} type='button' className='button project__button' rel='noreferrer' target='_blank'>Code: B</a>
+                      <a
+                        href={project.codeb}
+                        type='button'
+                        className='button project__button'
+                        rel='noreferrer'
+                        target='_blank'>
+                          Code: B
+                      </a>
                     )}
                   </div>
                 </div>
