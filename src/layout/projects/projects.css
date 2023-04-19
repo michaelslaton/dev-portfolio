@@ -27,7 +27,7 @@
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   border: solid 2px transparent;
-  scale: .97;
+  scale: .98;
 }
 .project__image:hover {
   -webkit-transition: 0.1s ease-in-out;
@@ -93,6 +93,6 @@
 
 @media (min-width: 1366px){
   .project__image {
-    scale: .97;
+    scale: .98;
   }
 }

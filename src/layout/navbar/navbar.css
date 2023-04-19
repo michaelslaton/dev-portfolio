@@ -45,6 +45,12 @@
 .navbar__button:hover {
   border: 2px solid var(--mike-font);
 }
+.navbar__button:active {
+  border: 2px solid var(--nav-button-active-border-color);
+  -webkit-transition: 0ms;
+  -o-transition: 0ms;
+  transition: 0ms;
+}
 .navbar__button:focus:not(.focus-visible) {
   outline: none;
 }
