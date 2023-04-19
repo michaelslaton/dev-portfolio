@@ -16,7 +16,7 @@ export default function Navbar({ shift }){
         <li>
           <a
             href='#top'
-            className={`navbar__button ${shift ? '' : 'button-at-top'}`}
+            className={`button navbar__button ${shift ? '' : 'button-at-top'}`}
           >
             About
           </a>
@@ -24,7 +24,7 @@ export default function Navbar({ shift }){
         <li>
           <a
             href='#skills'
-            className={`navbar__button ${shift ? '' : 'button-at-top'}`}
+            className={`button navbar__button ${shift ? '' : 'button-at-top'}`}
           >
             Skills
           </a>
@@ -32,7 +32,7 @@ export default function Navbar({ shift }){
         <li>
           <a
             href='#projects'
-            className={`navbar__button ${shift ? '' : 'button-at-top'}`}
+            className={`button navbar__button ${shift ? '' : 'button-at-top'}`}
           >
             Projects
           </a>
@@ -40,7 +40,7 @@ export default function Navbar({ shift }){
         <li>
           <a
             href='#contact'
-            className={`navbar__button ${shift ? '' : 'button-at-top'}`}
+            className={`button navbar__button ${shift ? '' : 'button-at-top'}`}
           >
             Contact
           </a>
