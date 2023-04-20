@@ -5,6 +5,7 @@ import weLoveMovies from '../assets/imgs/projectImages/weLoveMovies.jpg';
 const projectList = [
   {
     id:1,
+    show: true,
     name: 'Reservations Application',
     img: resApp,
     type: '(Full-Stack)',
@@ -16,6 +17,7 @@ const projectList = [
   },
   {
     id:2,
+    show: true,
     name: 'We Love Movies',
     img: weLoveMovies,
     type: '(Back-End)',
@@ -25,6 +27,7 @@ const projectList = [
   },
   {
     id:3,
+    show: true,
     name: 'Developer Portfolio',
     img: devPort,
     type: '(Front-End)',
