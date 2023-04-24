@@ -1,4 +1,3 @@
-import './projects.css';
 import projectList from '../../data/projectData';
 import Project from './components/project/Project';
 
