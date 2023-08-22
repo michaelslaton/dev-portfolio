@@ -1,3 +1,4 @@
+### Summary<br>
 My personal Front-end development portfolio. Below I will list links to it's live deployment, as well as other relative links.<br>
 <br>
 ### Links<br>
