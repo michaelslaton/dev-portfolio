@@ -1,14 +1,8 @@
-import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import SkillCard from './components/skillcard/SkillCard';
 import skills from '../../data/skills';
 import './skills.css';
 
 export default function Skills(){
-  const [skillVisible, setSkillVisible] = useState(false);
-  const { ref: skillRef, inView: visible } = useInView();
-
-  if(visible && !skillVisible) setSkillVisible(true);
 
   return (
     <div className='block'>
@@ -20,12 +14,11 @@ export default function Skills(){
           .sort((a,b)=>{ return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;})
           .map((skill, i) => {
             if(skill.learned) return (
-              <SkillCard key={skill.id} order={i} skill={skill} skillVisible={skillVisible}/>
+              <SkillCard key={skill.id} skill={skill}/>
             );
             return null;
           })}
       </div>
-      <div ref={skillRef}/>
     </div>
   );
 }

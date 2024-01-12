@@ -14,7 +14,7 @@ export default function Projects() {
               <Project projectData={project}/>
             )
           } else return null;
-        })}
+        }).reverse()}
       </div>
     </div>
   );

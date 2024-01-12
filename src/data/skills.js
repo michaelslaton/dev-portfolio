@@ -16,6 +16,7 @@ import restful from '../assets/imgs/skillsIcons/restful.png';
 import vercel from '../assets/imgs/skillsIcons/vercel.png';
 import redux from '../assets/imgs/skillsIcons/redux.png';
 import typescript from '../assets/imgs/skillsIcons/typescript.png';
+import firebase from '../assets/imgs/skillsIcons/firebase.png';
 
 const skills = [
   { 
@@ -122,13 +123,25 @@ const skills = [
     id: 17,
     name: 'Redux',
     img: redux,
-    learned: false,
+    learned: true,
   },
   { 
     id: 19,
     name: 'TypeScript',
     img: typescript,
-    learned: false,
+    learned: true,
+  },
+  { 
+    id: 20,
+    name: 'Firebase',
+    img: firebase,
+    learned: true,
+  },
+  { 
+    id: 21,
+    name: 'Node.js',
+    img: express,
+    learned: true,
   },
 ];
 
