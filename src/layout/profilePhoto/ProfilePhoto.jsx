@@ -1,4 +1,4 @@
-import mike from '../../assets/imgs/mike2.jpg';
+import mike from '../../assets/imgs/mikeNew.jpg';
 import './profilePhoto.css';
 
 export default function ProfilePhoto() {
