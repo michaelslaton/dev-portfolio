@@ -55,7 +55,7 @@ const projectList = [
     img: remazon,
     type: '(Front-End)',
     description: 'A web application for managing a Discord community, allowing users to create and display events on a calendar, track points for friendly competition, and enabling community leaders to communicate directly via messages of the day and notifications.',
-    tech: ['TypeScript', 'JavaScript','React.js', 'Firebase', 'HTML', 'Css', 'Node.js', 'Express.js', 'Knex.js', 'PostgreSQL',],
+    tech: ['TypeScript', 'JavaScript','React.js', 'Firebase', 'Redux', 'HTML', 'Css', 'Node.js', 'Express.js', 'Knex.js', 'PostgreSQL',],
     code: 'https://github.com/michaelslaton/remazon',
   },
 ];
