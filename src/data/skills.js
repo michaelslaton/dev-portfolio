@@ -17,6 +17,9 @@ import vercel from '../assets/imgs/skillsIcons/vercel.png';
 import redux from '../assets/imgs/skillsIcons/redux.png';
 import typescript from '../assets/imgs/skillsIcons/typescript.png';
 import firebase from '../assets/imgs/skillsIcons/firebase.png';
+import jest from '../assets/imgs/skillsIcons/jest.png';
+import reactTestingLibrary from '../assets/imgs/skillsIcons/reactTestingLibrary.png';
+import vitest from '../assets/imgs/skillsIcons/vitest.png';
 
 const skills = [
   { 
@@ -141,6 +144,24 @@ const skills = [
     id: 21,
     name: 'Node.js',
     img: express,
+    learned: true,
+  },
+  { 
+    id: 22,
+    name: 'Jest',
+    img: jest,
+    learned: true,
+  },
+  { 
+    id: 23,
+    name: 'React Testing Library',
+    img: reactTestingLibrary,
+    learned: true,
+  },
+  { 
+    id: 24,
+    name: 'Vitest',
+    img: vitest,
     learned: true,
   },
 ];
