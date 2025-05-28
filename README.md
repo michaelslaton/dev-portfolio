@@ -1,16 +1,29 @@
-### Summary<br>
-My personal Front-end development portfolio. Below I will list links to it's live deployment, as well as other relative links.<br>
-<br>
-### Links<br>
-**Live Deployment:** [MichaelSlatonDev.com](http://www.michaelslatondev.com)<br>
-**LinkedIn:** [michaelslatondev](https://www.linkedin.com/in/michaelslatondev/)<br>
-**Email:** [michaelaaronphoto@gmail.com](mailto:michaelaaronphoto@gmail.com)<br>
-<br>
-### Technologies<br>
-* React<br>
-* React-FontAwesome<br>
-* React-Router-Dom<br>
-* React-Intersection-Observer<br>
-* JavaScript<br>
-* CSS<br>
-* Email-Js<br>
+# 💼 Original Developer Portfolio (Archived)
+
+This was my first full-featured front-end portfolio site. It showcased my projects, skills, and contact info before I replaced it with a newer version built with React + TypeScript.
+
+> 📍 **Live version is no longer maintained. See my updated portfolio at [MichaelSlatonDev.com](http://www.michaelslatondev.com)**
+
+## 🔗 Links
+
+- 🔴 **Live Deployment (Legacy):** [MichaelSlatonDev.com](https://dev-portfolio-three-liart.vercel.app/)
+- 🔗 **New Portfolio:** [View my current site](https://michaelslatondev.com)
+- 💼 **LinkedIn:** [linkedin.com/in/michaelslatondev](https://www.linkedin.com/in/michaelslatondev/)
+- 📧 **Email:** [michael.slaton.dev@gmail.com](mailto:michael.slaton.dev@gmail.com)
+
+## 🛠️ Technologies Used
+
+- React
+- React FontAwesome
+- React Router DOM
+- React Intersection Observer
+- JavaScript
+- CSS
+- EmailJS
+
+## 🧠 Why I Replaced It
+
+This site helped me grow my skills and confidence early on. Since then, I’ve learned TypeScript, cleaner state management, and improved UI/UX techniques, which led to building a new, more polished portfolio.
+
+---
+
